@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Paraplu.art - all about dreams</title>
+    <meta
+      name="description"
+      content="Paraplu.art - dreams about something good. What dreams may come."
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Paraplu.art" />
+    <meta
+      property="og:description"
+      content="Paraplu.art - dreams about something good. What dreams may come."
+    />
+    <meta property="og:url" content="https://paraplu.art" />
+
+    <link
+      rel="preload"
+      href="/fonts/pt-sans-regular.woff2"
+      crossorigin
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="/fonts/pt-sans-bold.woff2"
+      crossorigin
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="/fonts/pt-sans-italic.woff2"
+      crossorigin
+      as="font"
+      type="font/woff2"
+    />
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="any.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href=180.png" />
+
+    <style>
+      :root {
+        --main-green-color: #a08c00;
+        --main-orange-color: #ffb400;
+      }
+
+      @font-face {
+        font-family: "PT Sans";
+        font-display: swap;
+        src: local("PT Sans"), local("PTSans-Regular"),
+          url("../fonts/pt-sans-regular.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "PT Sans";
+        font-weight: bold;
+        font-display: swap;
+        src: local("PT Sans Bold"), local("PTSans-Bold"),
+          url("../fonts/pt-sans-bold.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "PT Sans";
+        font-style: italic;
+        font-display: swap;
+        src: local("PT Sans Italic"), local("PTSans-Italic"),
+          url("../fonts/pt-sans-italic.woff2") format("woff2");
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.15; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .main {
+        position: relative;
+        height: 100%;
+        min-height: 643px;
+        min-width: 380px;
+
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: "PT Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+      }
+
+      .left,
+      .right {
+        width: 50%;
+        height: 100%;
+      }
+
+      .left {
+        background-color: var(--main-green-color);
+      }
+
+      .right {
+        background-color: var(--main-orange-color);
+      }
+
+      .lu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-168px, -50%);
+      }
+
+      .title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-107px);
+
+        color: var(--main-green-color);
+      }
+
+      .title span {
+        color: var(--main-orange-color);
+      }
+
+      .container-text {
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translateX(64px);
+
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--main-green-color);
+
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+      }
+
+      .copyright {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+
+        font-size: 12px;
+        color: var(--main-orange-color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="title">
+        <h1><span>Paraplu</span>.art</h1>
+      </div>
+      <div class="lu"><img src="i/Lu.png" width="300" /></div>
+      <div class="container-text">Soon</div>
+      <div class="copyright">&copy; 2024 Paraplu.art</div>
+      <section class="left"></section>
+      <section class="right"></section>
+    </main>
+  </body>
+</html>
