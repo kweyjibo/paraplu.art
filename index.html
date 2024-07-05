@@ -43,12 +43,12 @@
 
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="any.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href=180.png" />
+    <link rel="apple-touch-icon" href="180.png" />
 
     <style>
       :root {
-        --main-green-color: #a08c00;
-        --main-orange-color: #ffb400;
+        --main-green-color: #48a99a;
+        --main-orange-color: #e1b31c;
       }
 
       @font-face {
@@ -99,6 +99,8 @@
         font-style: normal;
         font-weight: 400;
         font-family: "PT Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+
+        background-color: var(--main-orange-color);
       }
 
       .left,
@@ -108,11 +110,13 @@
       }
 
       .left {
-        background-color: var(--main-green-color);
+        background-image: url("i/bg.png");
+        background-size: 200px;
+        background-repeat: repeat;
       }
 
       .right {
-        background-color: var(--main-orange-color);
+        background-color: var(--main-green-color);
       }
 
       .lu {
@@ -120,7 +124,7 @@
         top: 50%;
         left: 50%;
 
-        transform: translate(-168px, -50%);
+        transform: translate(-180px, -50%);
       }
 
       .title {
@@ -128,11 +132,11 @@
         left: 50%;
         transform: translateX(-107px);
 
-        color: var(--main-green-color);
+        color: var(--main-orange-color);
       }
 
       .title span {
-        color: var(--main-orange-color);
+        color: var(--main-green-color);
       }
 
       .container-text {
@@ -143,10 +147,25 @@
 
         font-size: 24px;
         font-weight: 700;
-        color: var(--main-green-color);
+        color: var(--main-orange-color);
 
         writing-mode: vertical-lr;
         text-orientation: upright;
+      }
+
+      .social {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-55px, 134px);
+
+        color: #2e6167;
+      }
+
+      .social a {
+        font-weight: bold;
+        color: #2e6167;
       }
 
       .copyright {
@@ -155,7 +174,7 @@
         left: 20px;
 
         font-size: 12px;
-        color: var(--main-orange-color);
+        color: var(--main-green-color);
       }
     </style>
   </head>
@@ -166,6 +185,9 @@
         <h1><span>Paraplu</span>.art</h1>
       </div>
       <div class="lu"><img src="i/Lu.png" width="300" /></div>
+      <div class="social">
+        IG <a href="https://www.instagram.com/paraplu.art/">@paraplu.art</a>
+      </div>
       <div class="container-text">Soon</div>
       <div class="copyright">&copy; 2024 Paraplu.art</div>
       <section class="left"></section>
