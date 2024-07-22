@@ -4,14 +4,16 @@
       "cardName": "Happy birthday",
       "notes": "My favorite city so far!",
       "id": "01",
-      "path": "/cards/preview/habby-birdhday.jpg",
+      "preview": "/cards/preview/habby-birdhday.jpg",
+      "image": "/cards/habby-birdhday.jpg",
       "size": "210"
     },
     {
       "cardName": "Cattuccinio",
       "notes": "My favorite city so far!",
       "id": "02",
-      "path": "/cards/preview/catuchinno.jpg",
+      "preview": "/cards/preview/catuchinno.jpg",
+      "image": "/cards/catuchinno.jpg",
       "size": "210"
     }
   ]
