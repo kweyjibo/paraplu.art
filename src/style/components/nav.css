@@ -1,0 +1,29 @@
+.nav-list {
+  --nav-element-height: 32px;
+  padding: 0;
+  margin: 12px 0 0;
+
+  background-color: var(--bg-site);
+  border-top: 1px solid var(--bg-nav-sp);
+}
+
+.nav-i {
+  list-style: none;
+
+  border-bottom: 1px solid var(--bg-nav-sp);
+}
+
+.nav-lk {
+  display: block;
+  padding: 12px;
+  height: var(--nav-element-height);
+
+  font-size: 24px;
+  color: #fff;
+  line-height: var(--nav-element-height);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

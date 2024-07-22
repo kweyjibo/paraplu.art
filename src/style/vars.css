@@ -1,0 +1,14 @@
+/*  Colors    */
+:root {
+  /* Colors */
+  --bg-site: #ffb400;
+  --bg-site-white: #fff;
+  --bg-header: #48a99a;
+
+  --bg-nav-sp: #d68d00;
+
+  --content-color: #333;
+
+  /* Heights */
+  --header-height: 50px;
+}

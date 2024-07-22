@@ -1,0 +1,8 @@
+.logo {
+  background-color: var(--bg-site);
+}
+
+.logo-rain {
+  height: var(--header-height);
+  background-color: var(--bg-header);
+}

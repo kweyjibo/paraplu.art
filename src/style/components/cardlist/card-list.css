@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  padding: 24px;
+}
+
+.list-i {
+  align-self: flex-start;
+}

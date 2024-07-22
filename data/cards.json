@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "cardName": "Happy birthday",
+      "notes": "My favorite city so far!",
+      "id": "01",
+      "path": "/cards/preview/habby-birdhday.jpg",
+      "size": "210"
+    },
+    {
+      "cardName": "Cattuccinio",
+      "notes": "My favorite city so far!",
+      "id": "02",
+      "path": "/cards/preview/catuchinno.jpg",
+      "size": "210"
+    }
+  ]
+}

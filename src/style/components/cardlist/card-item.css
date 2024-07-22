@@ -1,0 +1,32 @@
+.card-item {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.card-item__lk {
+  text-decoration: none;
+}
+
+.card-item__cnt {
+  margin: 0;
+}
+
+.card-item__img {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+
+  img {
+    display: block;
+  }
+
+  .card-item__lk:hover & {
+    transform: scale(1.03);
+    transition: transform 0.5s;
+  }
+}
+
+.card-item__caption {
+  padding-top: 4px;
+  color: #666;
+}
