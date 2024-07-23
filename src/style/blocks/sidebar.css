@@ -1,9 +1,4 @@
 .sidebar {
   grid-row: 1 / -1;
   box-sizing: border-box;
-
-  background-color: var(--bg-site);
-  background-image: url(./../../img/sidebar-pattern.png);
-  background-size: 80px 81px;
-  background-repeat: repeat;
 }

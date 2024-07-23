@@ -5,7 +5,7 @@ function Logo() {
     <>
       <div className="logo-rain"></div>
       <div className="logo">
-        <Logopicture alt="Logo" width={250} />
+        <Logopicture alt="Logo" width={224} />
       </div>
     </>
   );
