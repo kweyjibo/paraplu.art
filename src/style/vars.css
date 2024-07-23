@@ -1,11 +1,15 @@
 /*  Colors    */
 :root {
   /* Colors */
-  --bg-site: #ffb400;
-  --bg-site-white: #fff;
-  --bg-header: #48a99a;
+  --bg-site: #f6c03e;
+  --bg-site-white: #f8f7f3;
+  --bg-header: #3faeaf;
 
-  --bg-nav-sp: #d68d00;
+  --bg-nav-sp: #fff2da;
+  --bg-nav-active: #f6c03e;
+  --nav-color: #f6c03e;
+
+  --bg-logo: #fff;
 
   --content-color: #333;
 

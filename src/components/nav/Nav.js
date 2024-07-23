@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="nav-cnt">
       <ul className="nav-list">
         <li className="nav-i">
           <NavLink to="/" className="nav-lk">

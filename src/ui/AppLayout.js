@@ -15,7 +15,9 @@ function AppLayout() {
       <Header />
       <Sidebar />
       <main className="main">
-        <Outlet />
+        <section className="content">
+          <Outlet />
+        </section>
       </main>
     </div>
   );

@@ -1,6 +1,7 @@
 @import "rules.css";
 
 .inner {
+  max-width: 1024px;
   padding: 20px;
 
   h2 {
