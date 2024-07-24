@@ -28,5 +28,7 @@
 
 .card-item__caption {
   padding-top: 4px;
+
+  font-size: 20px;
   color: #666;
 }

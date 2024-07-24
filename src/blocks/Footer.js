@@ -1,3 +1,3 @@
 export default function Footer() {
-  return <header className="footer">welcome</header>;
+  return <footer className="footer cell4">&copy; 2024 Paraplu.art</footer>;
 }

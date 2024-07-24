@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import Header from "./../blocks/Header";
 import Sidebar from "./Sidebar";
+import Footer from "../blocks/Footer";
 
 export const metadata = {
   title: "Paraplu.art",
@@ -11,14 +12,15 @@ export const metadata = {
 
 function AppLayout() {
   return (
-    <div className="site">
+    <div className="grid">
       <Header />
       <Sidebar />
-      <main className="main">
+      <main className="main cell3">
         <section className="content">
           <Outlet />
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
