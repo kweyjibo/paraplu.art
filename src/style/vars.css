@@ -7,11 +7,17 @@
 
   --bg-nav-sp: #fff2da;
   --bg-nav-active: #f6c03e;
-  --nav-color: #f6c03e;
+  --nav-color: #917049;
 
   --bg-logo: #fff;
 
   --content-color: #333;
+
+  --button-bg: #fff;
+  --button-color: var(--bg-site);
+
+  --action-group-bg: #f6c03e;
+  --action-group-color: #917049;
 
   /* Heights */
   --header-height: 50px;
