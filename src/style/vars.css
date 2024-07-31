@@ -1,20 +1,21 @@
 /*  Colors    */
 :root {
   /* Colors */
-  --bg-site: #f6c03e;
-  --bg-site-white: #f8f7f3;
-  --bg-header: #3faeaf;
+  --site-bg: #f6c03e;
+  --site-bg-white: #f8f7f3;
+  --header-bg: #68bac9;
+  --site-color: #666;
 
-  --bg-nav-sp: #fff2da;
-  --bg-nav-active: #f6c03e;
+  --nav-sp-bg: #fff2da;
+  --nav-bg-active: var(--site-bg);
   --nav-color: #917049;
 
-  --bg-logo: #fff;
+  --logo-bg: #fff;
 
   --content-color: #333;
 
   --button-bg: #fff;
-  --button-color: var(--bg-site);
+  --button-color: var(--site-bg);
 
   --action-group-bg: #f6c03e;
   --action-group-color: #917049;

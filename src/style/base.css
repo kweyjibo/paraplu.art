@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  background-color: var(--bg-site-white);
+  background-color: var(--site-bg-white);
 
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   font-family: var(--font-family-text-roboto);
+  color: var(--site-color);
 }
 
 html {

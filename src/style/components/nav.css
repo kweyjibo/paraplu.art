@@ -15,7 +15,7 @@
 .nav-i:not(:last-child) {
   list-style: none;
 
-  border-bottom: 1px solid var(--bg-nav-sp);
+  border-bottom: 1px solid var(--nav-sp-bg);
 }
 
 .nav-lk {
@@ -37,7 +37,7 @@
 
   &.active {
     text-decoration: none;
-    background-color: var(--bg-nav-active);
+    background-color: var(--nav-bg-active);
   }
 }
 
