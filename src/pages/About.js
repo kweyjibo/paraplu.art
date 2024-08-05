@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
+
+import aboutImage from "../img/about.jpg";
 
 export const metadata = {
   title: "About",
@@ -16,9 +19,18 @@ function About() {
       .catch((error) => console.error("Error fetching markdown:", error));
   }, []);
   return (
-    <section className="inner">
-      <ReactMarkdown>{markdown}</ReactMarkdown>
-    </section>
+    <>
+      <Helmet>
+        <title>About / Paraplu.art</title>
+      </Helmet>
+      <section className="inner">
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+        <div className="about-footer"></div>
+        <div className="about-bg">
+          <img src={aboutImage} alt="About" width={300} />
+        </div>
+      </section>
+    </>
   );
 }
 

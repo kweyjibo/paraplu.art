@@ -1,0 +1,12 @@
+.about-bg {
+  position: absolute;
+  bottom: 0;
+
+  img {
+    display: block;
+  }
+}
+
+.about-footer {
+  height: 300px;
+}
