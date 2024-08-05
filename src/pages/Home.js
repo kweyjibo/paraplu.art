@@ -1,4 +1,4 @@
-import List from "../components/card/List";
+import List from "../components/card/CardList";
 
 function Home({ cards, isLoading }) {
   return (

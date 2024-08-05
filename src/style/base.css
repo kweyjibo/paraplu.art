@@ -19,6 +19,7 @@ html {
 }
 
 .content {
+  position: relative;
   padding: 32px;
   box-sizing: border-box;
   min-height: 100%;

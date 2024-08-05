@@ -1,0 +1,100 @@
+.cloud {
+  animation: moveCloud 6s alternate infinite ease-in-out;
+
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+
+  height: 50px;
+  width: 50px;
+
+  background: #61a8b5;
+  border-radius: 50%;
+
+  box-shadow: #61a8b5 65px -15px 0 -5px, #61a8b5 25px -25px, #61a8b5 30px 10px,
+    #61a8b5 60px 15px 0 -10px, #61a8b5 85px 5px 0 -5px;
+}
+
+@keyframes moveCloud {
+  to {
+    transform: translateX(100px);
+  }
+}
+
+.raindrop {
+  position: absolute;
+  top: 60px;
+  width: 2px;
+  height: 5px;
+  background: #61a8b5;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.raindrop.__1,
+.raindrop.__2,
+.raindrop.__3 {
+  left: 0px;
+}
+
+.raindrop.__4,
+.raindrop.__5,
+.raindrop.__6 {
+  left: 50px;
+}
+
+.raindrop.__7,
+.raindrop.__8,
+.raindrop.__9 {
+  left: 110px;
+}
+
+.raindrop.__1 {
+  animation-delay: 0s;
+}
+
+.raindrop.__2 {
+  animation-delay: 0.3s;
+}
+
+.raindrop.__3 {
+  animation-delay: 0.6s;
+}
+
+.raindrop.__4 {
+  animation-delay: 0.2s;
+}
+
+.raindrop.__5 {
+  animation-delay: 0.5s;
+}
+
+.raindrop.__6 {
+  animation-delay: 0.8s;
+}
+
+.raindrop.__7 {
+  animation-delay: 0.1s;
+}
+
+.raindrop.__8 {
+  animation-delay: 0.4s;
+}
+
+.raindrop.__9 {
+  animation-delay: 0.7s;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
