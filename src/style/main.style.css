@@ -6,17 +6,18 @@
 
 /* Import */
 
-@import "fonts.css";
+@import "global/fonts.css";
+@import "global/box-modal.css";
 @import "grid.css";
 @import "base.css";
 
-@import "blocks/header.css";
-@import "blocks/sidebar.css";
+@import "blocks/header/base.css";
+@import "blocks/sidebar/index.css";
 @import "blocks/footer.css";
 
 @import "components/intro.css";
-@import "components/nav.css";
-@import "components/logo.css";
+@import "components/nav/index.css";
+@import "components/logo/index.css";
 @import "components/cardlist/base.css";
 @import "components/button.css";
 

@@ -1,10 +1,9 @@
 .logo {
   padding: 10px 0;
+  overflow: hidden;
+  display: none;
 
   background-color: var(--logo-bg);
-
-  overflow: hidden;
-  border-radius: 12px;
 
   text-align: center;
 }

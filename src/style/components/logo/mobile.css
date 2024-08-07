@@ -1,0 +1,9 @@
+@media (width < 1024px) {
+  .logo {
+    border-radius: 8px;
+
+    &.__mobile {
+      display: block;
+    }
+  }
+}
