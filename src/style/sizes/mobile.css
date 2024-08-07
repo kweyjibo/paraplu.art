@@ -1,0 +1,11 @@
+@media (width < 1024px) {
+  :root {
+    /* Width */
+
+    --sidebar-width: 120px;
+
+    /* Font sizes */
+
+    --intro-font-size: 14px;
+  }
+}
