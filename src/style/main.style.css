@@ -4,16 +4,22 @@
 
 /* /impport vars */
 
-/* Import */
+/* Global */
 
 @import "global/fonts.css";
 @import "global/box-modal.css";
-@import "grid.css";
+
+/* Sizes */
+
+@import "sizes/mobile.css";
+@import "sizes/desktop.css";
+
 @import "base.css";
 
-@import "blocks/header/base.css";
+@import "blocks/grid/index.css";
+@import "blocks/header/index.css";
 @import "blocks/sidebar/index.css";
-@import "blocks/footer.css";
+@import "blocks/footer/index.css";
 
 @import "components/intro.css";
 @import "components/nav/index.css";
@@ -21,6 +27,7 @@
 @import "components/cardlist/base.css";
 @import "components/button.css";
 
-@import "pages/base.css";
+@import "pages/main/index.css";
+@import "pages/about/index.css";
 
 /* / import */

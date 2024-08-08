@@ -1,0 +1,15 @@
+@media (width >= 1024px) {
+  .footer {
+    --footer-shift: 32px;
+  }
+
+  .footer__section {
+    &.__4 {
+      font-size: 14px;
+    }
+  }
+
+  .footer__list {
+    gap: 12px;
+  }
+}

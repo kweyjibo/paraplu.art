@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background-color: var(--site-bg-white);
+  background-color: var(--site-bg-gray);
 
-  font-size: 16px;
+  font-size: var(--site-font-size);
   font-style: normal;
   font-weight: 400;
   font-family: var(--font-family-text-roboto);

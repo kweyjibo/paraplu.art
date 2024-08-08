@@ -1,0 +1,9 @@
+@media (width < 1024px) {
+  .footer {
+    --footer-shift: 18px;
+  }
+
+  .footer__list {
+    gap: 8px;
+  }
+}

@@ -2,7 +2,8 @@
 :root {
   /* Colors */
   --site-bg: #f6c03e;
-  --site-bg-white: #f8f7f3;
+  --site-bg-white: #fff;
+  --site-bg-gray: #f8f7f3;
   --header-bg: #68bac9;
   --site-color: #666;
 

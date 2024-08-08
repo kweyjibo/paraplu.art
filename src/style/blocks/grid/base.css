@@ -3,9 +3,6 @@
   grid-template-rows: 50px 1fr auto;
   grid-template-columns: var(--sidebar-width) 1fr;
 
-  grid-column-gap: 12px;
-  grid-row-gap: 36px;
-
   height: 100vh;
 }
 
