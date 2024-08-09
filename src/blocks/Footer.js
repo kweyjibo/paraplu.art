@@ -3,8 +3,7 @@ import { EMAIL, BLOG, IN, TELEGRAM, IG, COPYRIGHT } from "./footerContacts";
 export default function Footer() {
   return (
     <footer className="footer cell4">
-      <div className="footer__section">&copy; {COPYRIGHT}</div>
-      <div className="footer__section">
+      <div className="footer__section __1">
         <h3 className="footer__title">Links</h3>
 
         <ul className="footer__list">
@@ -30,12 +29,14 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="footer__section">
+      <div className="footer__section __2">
         <h3 className="footer__title">E-mail</h3>
         <a href={`mailto:${EMAIL}`} className="footer__link">
           {EMAIL}
         </a>
       </div>
+      <div className="footer__section __3"></div>
+      <div className="footer__section __4">&copy; {COPYRIGHT}</div>
     </footer>
   );
 }

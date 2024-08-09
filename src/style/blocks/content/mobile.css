@@ -1,0 +1,5 @@
+@media (width < 1024px) {
+  .content {
+    padding: 18px;
+  }
+}

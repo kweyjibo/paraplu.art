@@ -1,6 +1,4 @@
 .cloud {
-  animation: moveCloud 6s alternate infinite ease-in-out;
-
   position: absolute;
   left: 30px;
   top: 20px;

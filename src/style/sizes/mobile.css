@@ -4,6 +4,10 @@
 
     --sidebar-width: 120px;
 
+    /* Border */
+
+    --border-radius-size: 8px;
+
     /* Font sizes */
 
     --site-font-size: 12px;

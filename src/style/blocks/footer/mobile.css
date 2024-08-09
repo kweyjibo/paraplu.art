@@ -1,6 +1,8 @@
 @media (width < 1024px) {
   .footer {
     --footer-shift: 18px;
+
+    grid-column-gap: 4px;
   }
 
   .footer__list {

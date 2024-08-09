@@ -1,7 +1,5 @@
 @media (width >= 1024px) {
   .logo {
-    border-radius: 12px;
-
     &.__desktop {
       display: block;
     }

@@ -1,0 +1,5 @@
+@media (width >= 1024px) {
+  .cloud {
+    animation: moveCloud 6s alternate infinite ease-in-out;
+  }
+}

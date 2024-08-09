@@ -3,7 +3,6 @@
   grid-template-rows: auto auto;
   grid-template-columns: var(--sidebar-width) 2fr;
 
-  grid-column-gap: 12px;
   grid-row-gap: 0;
 
   background-color: var(--site-bg-white);

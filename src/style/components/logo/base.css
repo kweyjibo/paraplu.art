@@ -4,6 +4,7 @@
   display: none;
 
   background-color: var(--logo-bg);
+  border-radius: var(--border-radius-size);
 
   text-align: center;
 }

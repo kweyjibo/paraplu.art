@@ -17,13 +17,3 @@ html {
 .main {
   overflow-y: auto;
 }
-
-.content {
-  position: relative;
-  padding: 32px;
-  box-sizing: border-box;
-  min-height: 100%;
-
-  background-color: #fff;
-  border-radius: 12px;
-}
