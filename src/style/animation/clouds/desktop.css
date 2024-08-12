@@ -1,5 +1,26 @@
 @media (width >= 1024px) {
   .cloud {
+    height: 50px;
+    width: 50px;
+
+    box-shadow: #61a8b5 65px -15px 0 -5px, #61a8b5 25px -25px, #61a8b5 30px 10px,
+      #61a8b5 60px 15px 0 -10px, #61a8b5 85px 5px 0 -5px;
     animation: moveCloud 6s alternate infinite ease-in-out;
+  }
+
+  .raindrop {
+    top: 60px;
+  }
+
+  .raindrop.__4,
+  .raindrop.__5,
+  .raindrop.__6 {
+    left: 50px;
+  }
+
+  .raindrop.__7,
+  .raindrop.__8,
+  .raindrop.__9 {
+    left: 110px;
   }
 }

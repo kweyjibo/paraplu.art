@@ -1,5 +1,27 @@
 @media (width < 1024px) {
   .cloud {
     left: 10px;
+
+    height: 30px;
+    width: 30px;
+
+    box-shadow: #61a8b5 35px -15px 0 0, #61a8b5 15px -15px, #61a8b5 20px 10px,
+      #61a8b5 35px 10px 0 0, #61a8b5 50px 0 0 0;
+  }
+
+  .raindrop {
+    top: 35px;
+  }
+
+  .raindrop.__4,
+  .raindrop.__5,
+  .raindrop.__6 {
+    left: 35px;
+  }
+
+  .raindrop.__7,
+  .raindrop.__8,
+  .raindrop.__9 {
+    left: 75px;
   }
 }

@@ -1,15 +1,16 @@
 @media (width < 1024px) {
   .nav-cnt {
+    margin-top: 8px;
     border-radius: 8px;
   }
 
   .nav-list {
-    --nav-element-height: 48px;
+    --nav-element-height: 38px;
   }
 
   .nav-lk {
     padding: 8px;
 
-    font-size: 16px;
+    font-size: 14px;
   }
 }
