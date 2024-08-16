@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useCards } from "../../contexts/CardsContext";
 
 import Spinner from "../Spinner";
-import Button from "../Button";
+import Social from "../social/Social";
 
 function Card() {
   const { id } = useParams();
@@ -26,21 +26,7 @@ function Card() {
         <img src={image} width="600" alt="fff" />
       </figure>
       <section className="card-actions">
-        <fieldset className="card-actions__group">
-          <div>
-            <input type="radio" name="action" id="download" checked />
-            <label htmlFor="download">Download</label>
-          </div>
-
-          <div>
-            <input type="radio" name="action" id="print" />
-            <label htmlFor="print">Print</label>
-          </div>
-
-          <div>
-            <Button>OK</Button>
-          </div>
-        </fieldset>
+        <Social />
       </section>
     </div>
   );

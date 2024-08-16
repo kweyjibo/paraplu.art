@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import NavItem from "./NavItem";
 import navIcons from "../../img/icons/nav.svg";
 
 export default function Nav() {
@@ -6,35 +6,20 @@ export default function Nav() {
     <nav className="nav-cnt">
       <ul className="nav-list">
         <li className="nav-i">
-          <NavLink to="/" className="nav-lk">
-            <svg className="nav-svg" width={24} height={24}>
-              <use href={`${navIcons}#home`} />
-            </svg>
+          <NavItem url="/" icon={`${navIcons}#home`}>
             Home
-          </NavLink>
+          </NavItem>
         </li>
         <li className="nav-i">
-          <NavLink to="/about" className="nav-lk">
-            <svg className="nav-svg" width={24} height={24}>
-              <use href={`${navIcons}#about`} />
-            </svg>
+          <NavItem url="/about" icon={`${navIcons}#about`}>
             About
-          </NavLink>
+          </NavItem>
         </li>
         <li className="nav-i">
-          <NavLink to="/rules" className="nav-lk">
-            <svg className="nav-svg" width={24} height={24}>
-              <use href={`${navIcons}#rules`} />
-            </svg>
+          <NavItem url="/rules" icon={`${navIcons}#rules`}>
             Rules
-          </NavLink>
+          </NavItem>
         </li>
-        {/* <NavLink to="/FAQ" className="nav-i">
-          FAQ
-        </NavLink>
-        <NavLink to="/contact" className="nav-i">
-          Contact me
-        </NavLink> */}
       </ul>
     </nav>
   );
