@@ -16,7 +16,7 @@ function Card() {
     [id, getCard]
   );
 
-  const { image } = currentCard;
+  const { image, cardName } = currentCard;
 
   if (isLoading) return <Spinner />;
 
@@ -26,7 +26,7 @@ function Card() {
         <img src={image} width="600" alt="fff" />
       </figure>
       <section className="card-actions">
-        <Social />
+        <Social title={cardName} />
       </section>
     </div>
   );

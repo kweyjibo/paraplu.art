@@ -1,14 +1,36 @@
-import Icon from "../icon/Icon";
-import socialsIcons from "../../img/icons/socials.svg";
+import Popup from "../popup/Popup";
+import {
+  EmailShareButton,
+  EmailIcon,
+  FacebookShareButton,
+  FacebookIcon,
+} from "react-share";
 
-function Social() {
+function Social({ title }) {
+  const shareUrl = window.location.href;
+
   return (
-    <div>
-      <div>
-        <Icon res={`${socialsIcons}#share`} width={32} height={32} />
+    <div className="">
+      <div className="">
+        <Popup typeIcon="share" id="popup-share">
+          <EmailShareButton
+            url={shareUrl}
+            subject={title}
+            size={32}
+            round="true"
+          >
+            <EmailIcon size={32} round="true" />
+          </EmailShareButton>
+          <FacebookShareButton url={shareUrl} size={32} round="true">
+            <FacebookIcon size={32} round="true" />
+          </FacebookShareButton>
+        </Popup>
       </div>
-      <div>
-        <Icon res={`${socialsIcons}#download`} width={32} height={32} />
+
+      <div className="">
+        <Popup typeIcon="download" id="popup-download">
+          download
+        </Popup>
       </div>
     </div>
   );

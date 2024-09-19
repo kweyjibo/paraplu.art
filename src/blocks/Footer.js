@@ -35,7 +35,9 @@ export default function Footer() {
           {EMAIL}
         </a>
       </div>
-      <div className="footer__section __3"></div>
+      <div className="footer__section __3">
+        <p>Handcrafted by me</p> <p>Designed by me</p>
+      </div>
       <div className="footer__section __4">&copy; {COPYRIGHT}</div>
     </footer>
   );

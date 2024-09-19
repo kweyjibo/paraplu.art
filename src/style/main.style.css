@@ -28,6 +28,7 @@
 @import "components/cardlist/base.css";
 @import "components/button.css";
 @import "components/social/index.css";
+@import "components/popup/index.css";
 
 @import "pages/main/index.css";
 @import "pages/about/index.css";
