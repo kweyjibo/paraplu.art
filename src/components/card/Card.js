@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useCards } from "../../contexts/CardsContext";
 
 import Spinner from "../Spinner";
-import Social from "../social/Social";
+import CardActions from "../cardActions/CardActions";
 
 function Card() {
   const { id } = useParams();
@@ -26,7 +26,7 @@ function Card() {
         <img src={image} width="600" alt="fff" />
       </figure>
       <section className="card-actions">
-        <Social title={cardName} />
+        <CardActions title={cardName} image={image} />
       </section>
     </div>
   );

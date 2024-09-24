@@ -22,7 +22,7 @@
 @import "blocks/sidebar/index.css";
 @import "blocks/footer/index.css";
 
-@import "components/intro.css";
+@import "components/quote/index.css";
 @import "components/nav/index.css";
 @import "components/logo/index.css";
 @import "components/cardlist/base.css";

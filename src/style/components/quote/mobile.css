@@ -1,0 +1,5 @@
+@media (width < 1024px) {
+  .quote {
+    max-width: 200px;
+  }
+}

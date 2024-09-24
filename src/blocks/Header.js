@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="header-main cell1">
-      <section className="intro">
+      <section className="quote">
         Some people dance in the rain. Other just get wet.
       </section>
 
