@@ -6,12 +6,12 @@ import {
   FacebookIcon,
 } from "react-share";
 
-function Social({ title }) {
+function CardActions({ title, image }) {
   const shareUrl = window.location.href;
 
   return (
-    <div className="">
-      <div className="">
+    <div className="actions-list">
+      <div className="actions-list__i">
         <Popup typeIcon="share" id="popup-share">
           <EmailShareButton
             url={shareUrl}
@@ -27,13 +27,15 @@ function Social({ title }) {
         </Popup>
       </div>
 
-      <div className="">
+      <div className="actions-list__i">
         <Popup typeIcon="download" id="popup-download">
-          download
+          <a href={image} download="image.jpg">
+            download
+          </a>
         </Popup>
       </div>
     </div>
   );
 }
 
-export default Social;
+export default CardActions;
