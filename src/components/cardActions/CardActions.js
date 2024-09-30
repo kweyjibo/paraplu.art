@@ -1,3 +1,4 @@
+import Download from "../download/Download";
 import Popup from "../popup/Popup";
 import SocialNetworks from "../socialNetworks/SocialNetworks";
 
@@ -11,10 +12,29 @@ function CardActions({ title, image }) {
       </div>
 
       <div className="action-list__i">
-        <Popup typeIcon="download" id="popup-download">
-          <a href={image} download="image.jpg">
-            download
-          </a>
+        <Popup
+          typeIcon="download"
+          id="popup-download"
+          addClass="popup--download"
+        >
+          <ul className="download-list">
+            <li className="download-list__i">
+              <Download file={image} fileName={title}>
+                <span>
+                  <span className="download-text__bold">1240x1748</span> (A6,
+                  300dpi)
+                </span>
+              </Download>
+            </li>
+            <li className="download-list__i">
+              <Download file={image} fileName={title}>
+                <span>
+                  <span className="download-text__bold">1748x2480</span> (A5,
+                  300dpi)
+                </span>
+              </Download>
+            </li>
+          </ul>
         </Popup>
       </div>
     </div>

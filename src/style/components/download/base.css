@@ -1,0 +1,30 @@
+.download-list {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.download-list__i {
+  list-style: none;
+}
+
+.download-list__i:not(:first-child) {
+  margin-top: 12px;
+}
+
+.download-lk {
+  display: flex;
+
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--download-link-locor);
+}
+
+.download-icon svg {
+  fill: var(--download-link-locor);
+}
+
+.download-text__bold {
+  display: block;
+  font-weight: 700;
+}

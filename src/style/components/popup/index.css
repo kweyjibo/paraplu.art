@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.popup--download {
+  min-width: 130px;
+}
+
 .popup-clickable-area {
   position: relative;
   display: inline-block;
@@ -28,10 +32,11 @@
 .popup-close {
   position: absolute;
   top: 0;
-  right: 8px;
+  right: 4px;
 
   cursor: pointer;
   font-size: 20px;
+  color: var(--popup-close-bg);
 }
 
 input[type="checkbox"]:checked ~ .popup-content {

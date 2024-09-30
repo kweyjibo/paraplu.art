@@ -24,6 +24,9 @@
 
   --popup-bg: #f8f7f3;
   --popup-close-hover-bg: #f6c03e;
+  --popup-close-bg: #917049;
 
   --footer-link-color: var(--nav-color);
+
+  --download-link-locor: #917049;
 }

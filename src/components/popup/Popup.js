@@ -2,7 +2,7 @@ import Icon from "../icon/Icon";
 import Button from "../Button";
 import socialsIcons from "../../img/icons/socials.svg";
 
-function Popup({ id, typeIcon, children }) {
+function Popup({ id, typeIcon, children, addClass }) {
   return (
     <div className="popup">
       <input type="checkbox" id={id} />
@@ -13,7 +13,7 @@ function Popup({ id, typeIcon, children }) {
         </Button>
       </span>
 
-      <div className="popup-content">
+      <div className={`popup-content ${addClass}`}>
         <label htmlFor={id} className="popup-close">
           &times;
         </label>
