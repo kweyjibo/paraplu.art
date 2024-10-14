@@ -45,8 +45,13 @@
   }
 
   &.__1,
-  &.__2 {
+  &.__2,
+  &.__3 {
     padding: var(--footer-shift);
+  }
+
+  &.__3 p {
+    margin-top: 0;
   }
 }
 

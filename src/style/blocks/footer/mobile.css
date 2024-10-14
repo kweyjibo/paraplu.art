@@ -1,6 +1,6 @@
 @media (width < 1024px) {
   .footer {
-    --footer-shift: 18px;
+    --footer-shift: 12px;
 
     grid-column-gap: 4px;
   }

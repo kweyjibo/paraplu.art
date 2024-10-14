@@ -1,0 +1,9 @@
+@media (width < 1024px) {
+  .card-item__inner {
+    width: 150px;
+  }
+
+  .card-item__caption {
+    font-size: 12px;
+  }
+}

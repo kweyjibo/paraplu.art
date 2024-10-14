@@ -11,14 +11,10 @@
   margin: 0;
 }
 
-.card-item__img {
+.card-item__inner {
   display: inline-block;
   overflow: hidden;
   border-radius: 12px;
-
-  img {
-    display: block;
-  }
 
   .card-item__lk:hover & {
     transform: scale(1.03);
@@ -26,9 +22,12 @@
   }
 }
 
+.card-item__img {
+  display: block;
+  width: 100%;
+}
+
 .card-item__caption {
   padding-top: 4px;
-
-  font-size: 20px;
   color: #666;
 }
