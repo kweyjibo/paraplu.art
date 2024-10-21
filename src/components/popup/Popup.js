@@ -32,7 +32,7 @@ function Popup({ id, typeIcon, children, addClass }) {
         </Button>
       </span>
 
-      <div className={`popup-content ${addClass}`}>
+      <div className={`popup-content ${addClass ? addClass : ""}`}>
         <label htmlFor={id} className="popup-close">
           &times;
         </label>

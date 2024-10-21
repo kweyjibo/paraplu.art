@@ -1,3 +1,35 @@
 .social-ic {
   fill: var(--nav-color);
 }
+
+.social-networks__tx {
+  padding-bottom: 8px;
+  min-width: 120px;
+
+  font-size: 12px;
+}
+
+.social-list {
+  padding-bottom: 8px;
+}
+
+.social-list__i {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-list__i:not(:first-child) {
+  margin-left: 8px;
+}
+
+.social-input {
+  padding: 4px 8px;
+  width: 100%;
+
+  font-size: 11px;
+
+  border: 0;
+  border-radius: 4px;
+
+  outline: none;
+}

@@ -23,11 +23,10 @@ function About() {
       <Helmet>
         <title>About / Paraplu.art</title>
       </Helmet>
-      <section className="inner">
+      <section className="inner __footer">
         <ReactMarkdown>{markdown}</ReactMarkdown>
-        <div className="about-footer"></div>
         <div className="about-bg">
-          <img src={aboutImage} alt="About" width={300} />
+          <img src={aboutImage} alt="About" width="100%" />
         </div>
       </section>
     </>
