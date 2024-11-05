@@ -1,0 +1,8 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-i {
+  align-self: flex-start;
+}

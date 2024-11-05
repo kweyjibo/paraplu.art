@@ -25,8 +25,8 @@
 @import "components/quote/index.css";
 @import "components/nav/index.css";
 @import "components/logo/index.css";
-@import "components/cardlist/base.css";
-@import "components/button.css";
+@import "components/cards/base.css";
+@import "components/button/index.css";
 @import "components/social/index.css";
 @import "components/popup/index.css";
 @import "components/action-list/index.css";

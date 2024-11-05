@@ -16,9 +16,9 @@
 
   --content-color: #333;
 
-  --button-bg: #f8f7f3;
+  --button-bg: #f1cd1d;
   --button-bg-hover: #f6c03e;
-  --button-color: var(--site-bg);
+  --button-color: #fff;
 
   --action-group-bg: #f6c03e;
   --action-group-color: #917049;

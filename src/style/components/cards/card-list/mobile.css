@@ -1,0 +1,5 @@
+@media (width < 1024px) {
+  .list {
+    gap: 16px;
+  }
+}
