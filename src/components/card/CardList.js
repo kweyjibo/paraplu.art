@@ -15,7 +15,7 @@ function CardList() {
 
   return (
     <div className="list">
-      {cards.map((card) => (
+      {[...cards].reverse().map((card) => (
         <CardItem key={card.id} card={card} />
       ))}
     </div>

@@ -23,11 +23,14 @@ function Card() {
   return (
     <div className="card-cnt">
       <figure className="card">
-        <img src={image} width="600" alt="fff" />
+        <img src={image} alt="fff" className="card-img" />
       </figure>
-      <section className="card-actions">
-        <CardActions title={cardName} image={image} />
-      </section>
+      <div>
+        <h1 className="card-title">{cardName}</h1>
+        <section className="card-actions">
+          <CardActions title={cardName} image={image} />
+        </section>
+      </div>
     </div>
   );
 }

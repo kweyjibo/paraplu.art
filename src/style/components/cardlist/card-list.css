@@ -1,9 +1,0 @@
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-
-.list-i {
-  align-self: flex-start;
-}
