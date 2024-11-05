@@ -1,5 +1,5 @@
 @media (width >= 1024px) {
-  .action-list__i:not(:first-child) {
-    margin-top: 16px;
+  .action-list {
+    gap: 16px;
   }
 }

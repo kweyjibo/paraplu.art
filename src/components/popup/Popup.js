@@ -28,7 +28,7 @@ function Popup({ id, typeIcon, children, addClass }) {
       <span className="popup-clickable-area">
         <label htmlFor={id} className="open-popup-btn"></label>
         <Button type="circle">
-          <Icon res={`${socialsIcons}#${typeIcon}`} width={32} height={32} />
+          <Icon res={`${socialsIcons}#${typeIcon}`} />
         </Button>
       </span>
 

@@ -1,2 +1,5 @@
 @media (width < 1024px) {
+  .action-list {
+    gap: 8px;
+  }
 }
