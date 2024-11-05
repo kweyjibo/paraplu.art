@@ -1,0 +1,8 @@
+@media (width < 1024px) {
+  .btn {
+    &.circle {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
