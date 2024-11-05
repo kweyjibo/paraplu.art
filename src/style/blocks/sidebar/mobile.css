@@ -2,4 +2,8 @@
   .sidebar {
     padding: 0 4px;
   }
+
+  .sidebar-bottom {
+    display: none;
+  }
 }
