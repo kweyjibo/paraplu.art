@@ -1,4 +1,4 @@
-import { EMAIL, BLOG, IN, TELEGRAM, IG, COPYRIGHT } from "./footerContacts";
+import { EMAIL, BLOG, TELEGRAM, IG, COPYRIGHT, ABOUT } from "./footerContacts";
 
 export default function Footer() {
   return (
@@ -10,11 +10,6 @@ export default function Footer() {
           <li>
             <a href={BLOG} className="footer__link">
               Personal blog
-            </a>
-          </li>
-          <li>
-            <a href={IN} className="footer__link">
-              Linkedin
             </a>
           </li>
           <li>
@@ -36,9 +31,22 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer__section __3">
-        <p>Handcrafted by me</p> <p>Designed by me</p>
+        <p>
+          Handcrafted by{" "}
+          <a href={ABOUT} className="footer__link">
+            me
+          </a>
+        </p>
+        <p>
+          Designed by{" "}
+          <a href={ABOUT} className="footer__link">
+            me
+          </a>
+        </p>
       </div>
-      <div className="footer__section __4">&copy; {COPYRIGHT}</div>
+      <div className="footer__section __4">
+        <span className="footer-copyright">&copy; {COPYRIGHT}</span>
+      </div>
     </footer>
   );
 }
