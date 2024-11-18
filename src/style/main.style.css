@@ -35,4 +35,7 @@
 @import "pages/main/index.css";
 @import "pages/about/index.css";
 
-@import "animation/clouds/index.css"; /* / import */
+@import "animation/clouds/index.css";
+@import "animation/spinner/index.css";
+
+/* / import */

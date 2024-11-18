@@ -79,3 +79,7 @@
     color: var(--footer-link-color);
   }
 }
+
+.footer-copyright {
+  color: #999;
+}

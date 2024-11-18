@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Rules from "./pages/Rules";
 import PageNotFound from "./pages/PageNotFound";
 import Card from "./components/card/Card";
+import CardList from "./components/card/CardList";
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Home />} />
-            <Route path="cards/:id" element={<Card />} />
+            <Route path="home" element={<Home />} />
+            <Route path="cards" element={<CardList />} />
+            <Route path="/cards/:id" element={<Card />} />
             <Route path="about" element={<About />} />
             <Route path="rules" element={<Rules />} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
-          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </CardsProvider>

@@ -1,10 +1,13 @@
-import List from "../components/card/CardList";
+import CardList from "../components/card/CardList";
 
-function Home({ cards, isLoading }) {
+function Home() {
   return (
-    <div>
-      <List cards={cards} isLoading={isLoading} />
-    </div>
+    <>
+      <h2>Latest cards</h2>
+      <div>
+        <CardList limit={2} />
+      </div>
+    </>
   );
 }
 
