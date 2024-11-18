@@ -1,6 +1,7 @@
 @media (width >= 1024px) {
   .card-item__inner {
     width: 300px;
+    height: 300px;
   }
 
   .card-item__caption {

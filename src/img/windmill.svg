@@ -47,8 +47,8 @@
       begin="0s"
       dur="10s"
       type="rotate"
-      from="0 97 97"
-      to="360 97 97"
+      from="360 97 97"
+      to="0 97 97"
       repeatCount="indefinite" />
   </g>
 </svg>
