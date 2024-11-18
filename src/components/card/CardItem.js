@@ -5,7 +5,7 @@ function CardItem({ card }) {
 
   return (
     <div className="card-item">
-      <Link to={`cards/${id}`} className="card-item__lk">
+      <Link to={`/cards/${id}`} className="card-item__lk">
         <figure className="card-item__cnt">
           <span className="card-item__inner">
             <img src={preview} alt={cardName} className="card-item__img" />

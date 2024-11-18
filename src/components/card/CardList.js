@@ -2,23 +2,27 @@ import CardItem from "./CardItem";
 import Spinner from "../Spinner";
 import { useCards } from "../../contexts/CardsContext";
 
-function CardList() {
-  const { cards, isLoading } = useCards();
+function CardList({ limit }) {
+  const { cards, isLoading, error } = useCards();
 
   if (isLoading) {
     return <Spinner />;
   }
 
-  if (!cards.length) {
-    return <p>No cards found</p>;
-  }
+  const displayedCards = limit ? cards.slice(-limit) : cards;
 
   return (
-    <div className="list">
-      {[...cards].reverse().map((card) => (
-        <CardItem key={card.id} card={card} />
-      ))}
-    </div>
+    <>
+      {!cards.length ? (
+        <p>{error}</p>
+      ) : (
+        <div className="list">
+          {[...displayedCards].reverse().map((card) => (
+            <CardItem key={card.id} card={card} />
+          ))}
+        </div>
+      )}
+    </>
   );
 }
 
