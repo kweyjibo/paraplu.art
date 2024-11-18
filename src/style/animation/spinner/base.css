@@ -1,0 +1,22 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  border-top: 16px solid var(--site-bg);
+  border-right: 16px solid var(--header-bg);
+  border-bottom: 16px solid var(--nav-color);
+  border-left: 16px solid var(--button-bg);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spinner-animation 2s linear infinite;
+}
+@keyframes spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
