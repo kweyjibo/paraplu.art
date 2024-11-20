@@ -9,7 +9,7 @@ function CardList({ limit }) {
     return <Spinner />;
   }
 
-  const displayedCards = limit ? cards.slice(-limit) : cards;
+  const displayedCards = limit ? cards.slice(0, limit) : cards;
 
   return (
     <>
@@ -17,7 +17,7 @@ function CardList({ limit }) {
         <p>{error}</p>
       ) : (
         <div className="list">
-          {[...displayedCards].reverse().map((card) => (
+          {displayedCards.map((card) => (
             <CardItem key={card.id} card={card} />
           ))}
         </div>

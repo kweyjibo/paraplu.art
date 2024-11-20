@@ -15,16 +15,16 @@
   display: inline-block;
   overflow: hidden;
   border-radius: var(--border-radius-size);
-
-  .card-item__lk:hover & {
-    transform: scale(1.03);
-    transition: transform 0.5s;
-  }
 }
 
 .card-item__img {
   display: block;
   width: 100%;
+
+  .card-item__lk:hover & {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
 .card-item__caption {
