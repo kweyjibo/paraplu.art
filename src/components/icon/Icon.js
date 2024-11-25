@@ -1,6 +1,8 @@
-function Icon({ res, width, height }) {
+function Icon({ res, additionalClass }) {
+  const classes = additionalClass ? `icon ${additionalClass}` : "icon";
+
   return (
-    <svg className="social-ic" width={width} height={height}>
+    <svg className={classes}>
       <use href={res} />
     </svg>
   );
