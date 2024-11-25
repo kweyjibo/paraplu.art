@@ -1,12 +1,6 @@
-import {
-  createContext,
-  useEffect,
-  useContext,
-  useReducer,
-  useCallback,
-} from "react";
+import { createContext, useEffect, useContext, useReducer } from "react";
 
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "/data";
 
 const CardsContext = createContext();
 
@@ -14,7 +8,7 @@ const initialState = {
   cards: [],
   isLoading: false,
   currentCard: {},
-  error: "",
+  error: null,
 };
 function reducer(state, action) {
   switch (action.type) {
@@ -49,43 +43,42 @@ function CardsProvider({ children }) {
   );
 
   useEffect(function () {
-    async function fetchCards() {
+    const fetchCards = async () => {
       dispatch({ type: "loading" });
 
       try {
-        const res = await fetch(`${BASE_URL}/cards`);
+        const res = await fetch(`${BASE_URL}/cards.json`);
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
         const data = await res.json();
 
         dispatch({ type: "cards/loaded", payload: data });
-      } catch (error) {
+      } catch (err) {
         dispatch({
           type: "rejected",
-          payload: "There was an error loading the cards...",
+          payload: "There was an error loading data...",
         });
       }
-    }
+    };
+
     fetchCards();
   }, []);
 
-  const getCard = useCallback(
-    async function getCard(id) {
-      if (Number(id) === currentCard.id) return;
+  const getCard = function (id) {
+    if (Number(id) === currentCard.id) return;
 
-      dispatch({ type: "loading" });
+    dispatch({ type: "loading" });
 
-      try {
-        const res = await fetch(`${BASE_URL}/cards/${id}`);
-        const data = await res.json();
-        dispatch({ type: "card/loaded", payload: data });
-      } catch {
-        dispatch({
-          type: "rejected",
-          payload: "There was an error loading the card...",
-        });
-      }
-    },
-    [currentCard.id]
-  );
+    const card = cards.filter((card) => card.id === id)[0];
+    if (card) {
+      dispatch({ type: "card/loaded", payload: card });
+      return;
+    } else {
+      dispatch({ type: "rejected", payload: "Card not found" });
+    }
+  };
+
   return (
     <CardsContext.Provider
       value={{ cards, isLoading, currentCard, error, getCard }}

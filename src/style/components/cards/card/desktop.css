@@ -18,4 +18,8 @@
   .card-title {
     padding-bottom: 20px;
   }
+
+  .card-actions {
+    padding-top: 20px;
+  }
 }
