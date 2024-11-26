@@ -9,8 +9,12 @@
   }
 
   .nav-lk {
-    padding: 12px;
+    padding: 16px 12px;
 
     font-size: 24px;
+  }
+
+  .nav__ic {
+    margin-right: 12px;
   }
 }
