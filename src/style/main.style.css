@@ -32,6 +32,7 @@
 @import "components/popup/index.css";
 @import "components/action-list/index.css";
 @import "components/download/index.css";
+@import "components/icon/index.css";
 
 @import "pages/home/index.css";
 @import "pages/main/index.css";

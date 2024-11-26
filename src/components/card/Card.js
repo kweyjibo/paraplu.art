@@ -14,6 +14,10 @@ function Card() {
   useEffect(
     function () {
       getCard(id);
+
+      return function () {
+        getCard(null);
+      };
     },
     [id, getCard]
   );
@@ -38,6 +42,7 @@ function Card() {
         </figure>
         <div>
           <h1 className="card-title">{cardName}</h1>
+          <div>{description}</div>
           <section className="card-actions">
             <CardActions title={cardName} image={image} />
           </section>

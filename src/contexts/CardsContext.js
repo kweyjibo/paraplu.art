@@ -1,4 +1,10 @@
-import { createContext, useEffect, useContext, useReducer } from "react";
+import {
+  createContext,
+  useEffect,
+  useContext,
+  useReducer,
+  useCallback,
+} from "react";
 
 const BASE_URL = "/data";
 
@@ -65,19 +71,27 @@ function CardsProvider({ children }) {
     fetchCards();
   }, []);
 
-  const getCard = function (id) {
-    if (Number(id) === currentCard.id) return;
+  const getCard = useCallback(
+    function (id) {
+      if (!id) {
+        dispatch({ type: "card/loaded", payload: {} });
+        return;
+      }
 
-    dispatch({ type: "loading" });
+      if (Number(id) === currentCard.id) return;
 
-    const card = cards.filter((card) => card.id === id)[0];
-    if (card) {
-      dispatch({ type: "card/loaded", payload: card });
-      return;
-    } else {
-      dispatch({ type: "rejected", payload: "Card not found" });
-    }
-  };
+      dispatch({ type: "loading" });
+
+      const card = cards.filter((card) => card.id === id)[0];
+      if (card) {
+        dispatch({ type: "card/loaded", payload: card });
+        return;
+      } else {
+        dispatch({ type: "rejected", payload: "Card not found" });
+      }
+    },
+    [cards, currentCard.id]
+  );
 
   return (
     <CardsContext.Provider
