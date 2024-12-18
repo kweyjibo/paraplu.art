@@ -18,6 +18,7 @@ function SocialNetworks({ shareUrl, title }) {
         console.error("Failed to copy: ", err);
       });
   };
+
   return (
     <div>
       <Popup typeIcon="share" id="popup-share">

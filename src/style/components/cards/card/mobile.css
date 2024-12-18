@@ -1,6 +1,6 @@
 @media (width < 1024px) {
   .card-cnt {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 12px;
   }
 
