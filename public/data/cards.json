@@ -1,0 +1,74 @@
+[
+  {
+    "cardName": "Happy New Year",
+    "notes": "Happy New Year card with a snake",
+    "id": "06",
+    "preview": "/cards/HNY/preview.jpg",
+    "image": "/cards/HNY/happy-new-year.jpg",
+    "image1240": "/cards/HNY/happy-new-year-1240.jpg",
+    "image1748": "/cards/HNY/happy-new-year-1748.jpg",
+    "size": "280",
+    "keywords": "winter, snow, greeting, card, happy new year",
+    "description": "This is a greeting card to say Happy New Year. 2025 is the year of the snake."
+  },
+  {
+    "cardName": "Funny Winter",
+    "notes": "Winter image",
+    "id": "05",
+    "preview": "/cards/winter/preview.jpg",
+    "image": "/cards/winter/happy-winter.jpg",
+    "image1240": "/cards/winter/happy-winter(1240x1748).jpg",
+    "image1748": "/cards/winter/happy-winter(1748x2480).jpg",
+    "size": "280",
+    "keywords": "winter, snow, greeting, card",
+    "description": "This is a funny card."
+  },
+  {
+    "cardName": "Happy Winter",
+    "notes": "Winter image",
+    "id": "04",
+    "preview": "/cards/happy-winter/preview.jpg",
+    "image": "/cards/happy-winter/happy-winter.jpg",
+    "image1240": "/cards/happy-winter/happy-winter(1240x1748).jpg",
+    "image1748": "/cards/happy-winter/happy-winter(1748x2480).jpg",
+    "size": "280",
+    "keywords": "winter, snow, greeting, card",
+    "description": "This is a greeting card to say 'Happy Winter'."
+  },
+  {
+    "cardName": "November calendar",
+    "notes": "November calendar",
+    "id": "03",
+    "preview": "/cards/november-calendar/preview.jpg",
+    "image": "/cards/november-calendar/november-calendar.jpg",
+    "image1240": "/cards/november-calendar/november-calendar-1240.jpg",
+    "image1748": "/cards/november-calendar/november-calendar-1748.jpg",
+    "size": "280",
+    "keywords": "autumn, leaves, fall, november, greeting, card",
+    "description": "This is a greeting card for November."
+  },
+  {
+    "cardName": "October calendar",
+    "notes": "October calendar",
+    "id": "02",
+    "preview": "/cards/october-calendar/preview.jpg",
+    "image": "/cards/october-calendar/oktober-calendar.jpg",
+    "image1240": "/cards/october-calendar/oktober-calendar-1240.jpg",
+    "image1748": "/cards/october-calendar/oktober-calendar-1748.jpg",
+    "size": "280",
+    "keywords": "autumn, leaves, fall, oktober, greeting, card",
+    "description": "This is a greeting card for Oktober. It features a pumkin with a cat."
+  },
+  {
+    "cardName": "Happy Autumn",
+    "notes": "Happy Autumn",
+    "id": "01",
+    "preview": "/cards/happy-autumn/happy-autumn-preview.jpg",
+    "image": "/cards/happy-autumn/happy-autumn.jpg",
+    "image1240": "/cards/happy-autumn/happy-autumn(1240x1748).jpg",
+    "image1748": "/cards/happy-autumn/happy-autumn(1748x2480).jpg",
+    "size": "280",
+    "keywords": "autumn, leaves, fall, happy, greeting, card",
+    "description": "This is a greeting card for the autumn season. It features a tree with leaves in autumn colors. The text on the card reads 'Happy Autumn'."
+  }
+]
