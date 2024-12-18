@@ -7,7 +7,9 @@ function Intro() {
     <section className="intro">
       <div className="intro-grid">
         <div className="intro-grid__cell1">
-          Hello! Welcom to Paraplu.art. You could met
+          <p>Hello!</p>
+          <p>Welcome to Paraplu.art.</p>
+          <p>You will meet</p>
         </div>
         <div className="intro-grid__cell2">
           <img src={Lu} alt="Lu" className="intro-img__250" />
