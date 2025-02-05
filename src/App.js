@@ -9,6 +9,7 @@ import Rules from "./pages/Rules";
 import PageNotFound from "./pages/PageNotFound";
 import Card from "./components/card/Card";
 import CardList from "./components/card/CardList";
+import WallpaperList from "./components/wallpapers/WallpaperList";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="home" element={<Home />} />
               <Route path="cards" element={<CardList />} />
               <Route path="/cards/:id" element={<Card />} />
+              <Route path="wallpapers" element={<WallpaperList />} />
               <Route path="about" element={<About />} />
               <Route path="rules" element={<Rules />} />
               <Route path="*" element={<PageNotFound />} />

@@ -16,6 +16,15 @@ export default function Nav() {
           </NavItem>
         </li>
         <li className="nav-i">
+          <NavItem
+            url="/wallpapers"
+            icon={`${navIcons}#wallpapers`}
+            additionalClass="small"
+          >
+            Wallpapers
+          </NavItem>
+        </li>
+        <li className="nav-i">
           <NavItem url="/about" icon={`${navIcons}#about`}>
             About
           </NavItem>

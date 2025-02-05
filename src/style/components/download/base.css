@@ -24,6 +24,11 @@
   fill: var(--download-link-locor);
 }
 
+.download-text {
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
 .download-text__bold {
   display: block;
   font-weight: 700;

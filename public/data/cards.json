@@ -1,5 +1,17 @@
 [
   {
+    "cardName": "Happy Birthday",
+    "notes": "Say Happy Birthday to your friends",
+    "id": "07",
+    "preview": "/cards/happy-birthday/preview.jpg",
+    "image": "/cards/happy-birthday/happy-birthday.jpg",
+    "image1240": "/cards/happy-birthday/happy-birthday(1240x1748).jpg",
+    "image1748": "/cards/happy-birthday/happy-birthday(1748x2480).jpg",
+    "size": "280",
+    "keywords": "happy birthday, greeting, card",
+    "description": "Make your friends happy with this birthday card."
+  },
+  {
     "cardName": "Happy New Year",
     "notes": "Happy New Year card with a snake",
     "id": "06",

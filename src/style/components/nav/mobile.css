@@ -9,12 +9,16 @@
   }
 
   .nav-lk {
-    padding: 8px;
+    padding: 4px;
 
     font-size: 14px;
+
+    &.small {
+      font-size: 12px;
+    }
   }
 
   .nav__ic {
-    margin-right: 8px;
+    margin-right: 2px;
   }
 }

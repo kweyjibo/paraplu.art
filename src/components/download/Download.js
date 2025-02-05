@@ -1,11 +1,12 @@
-import { ReactComponent as DownloadIcon } from "./../../img/icons/download-16.svg";
+import socialsIcons from "../../img/icons/socials.svg";
+import Icon from "../icon/Icon";
 
 function Download({ file, fileName, children }) {
   return (
     <a href={file} download={fileName} className="download-lk">
       <span className="download-icon">
-        <DownloadIcon width="16" />
-      </span>{" "}
+        <Icon res={`${socialsIcons}#download`} />
+      </span>
       {children}
     </a>
   );
