@@ -38,7 +38,7 @@ function Card() {
 
       <div className="card-cnt">
         <figure className="card">
-          <img src={image} alt="fff" className="card-img" />
+          <img src={image} alt={cardName} className="card-img" />
         </figure>
         <div>
           <h1 className="card-title">{cardName}</h1>
