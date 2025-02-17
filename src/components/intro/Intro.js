@@ -7,21 +7,27 @@ function Intro() {
     <section className="intro">
       <div className="intro-grid">
         <div className="intro-grid__cell1">
-          <p>Hello!</p>
-          <p>Welcome to Paraplu.art.</p>
+          <p className="intro-big-text">Hello!</p>
+          <p>
+            Welcome to <span className="intro-big-text">Paraplu.art</span>.
+          </p>
           <p>You will meet</p>
         </div>
         <div className="intro-grid__cell2">
-          <img src={Lu} alt="Lu" className="intro-img__250" />
+          <figure className="intro-figure">
+            <img src={Lu} alt="Lu" className="intro-img__250" />
+          </figure>
         </div>
         <div className="intro-grid__cell3">or</div>
         <div className="intro-grid__cell4">
-          <img src={Cat} alt="cats" className="intro-img__210" />
+          <figure className="intro-figure">
+            <img src={Cat} alt="cats" className="intro-img__210" />
+          </figure>
         </div>
 
         <div className="intro-grid__cell5">
           And many other characters
-          <figure className="">
+          <figure className="intro-figure __top">
             <img src={Snail} alt="snail" className="intro-img__210" />
           </figure>
         </div>

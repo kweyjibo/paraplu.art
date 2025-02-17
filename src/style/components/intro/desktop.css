@@ -11,6 +11,10 @@
     width: 210px;
   }
 
+  .intro-big-text {
+    font-size: 22px;
+  }
+
   .spiral-container {
     position: relative;
     width: 200px;

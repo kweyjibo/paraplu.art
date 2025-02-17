@@ -6,4 +6,8 @@
   .intro-img__210 {
     width: 70px;
   }
+
+  .intro-big-text {
+    font-size: 18px;
+  }
 }

@@ -32,3 +32,11 @@
 .intro-grid__cell5 {
   grid-area: 3 / 1 / 4 / 4;
 }
+
+.intro-figure {
+  margin: 0;
+
+  &.__top {
+    margin-top: 12px;
+  }
+}
