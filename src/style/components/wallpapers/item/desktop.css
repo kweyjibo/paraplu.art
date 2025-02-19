@@ -8,9 +8,10 @@
   }
 
   .wallpaper-i__title {
-    padding: 4px 0 0 0;
+    padding: 8px 0 0 0;
     margin: 0;
 
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
   }
 }

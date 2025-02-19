@@ -40,7 +40,7 @@ function WallpaperList() {
         <meta name="description" content="Wallpapers" />
         <meta
           name="keywords"
-          content="wallpapers, wallpaper, wallpaper for screen, background, backgrounds"
+          content="wallpapers,wallpaper,wallpaper for screen,background,backgrounds,illustration,digital art,digital illustration,"
         />
       </Helmet>
       <div className="wallpapers-list">
