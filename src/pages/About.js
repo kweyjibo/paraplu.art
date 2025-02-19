@@ -21,7 +21,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About / Paraplu.art</title>
+        <title> Paraplu.art. About</title>
       </Helmet>
       <section className="inner __footer">
         <ReactMarkdown>{markdown}</ReactMarkdown>

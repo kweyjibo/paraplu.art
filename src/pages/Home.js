@@ -4,7 +4,7 @@ import Intro from "../components/intro/Intro";
 
 function Home() {
   const description =
-    "Paraplu.art - dreams about something good. What dreams may come.";
+    "Paraplu.art - dreams about something good. Digital illustration and simple art about life, nature, and people.";
   const title = "Welcome to Paraplu.art";
   return (
     <>
@@ -12,7 +12,10 @@ function Home() {
         <meta property="og:title" content={title} />
         <title>Welcome to Paraplu.art</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content="art, illustration, dreams" />
+        <meta
+          name="keywords"
+          content="art,illustration,digital art,digital illustration,vector graphics"
+        />
         <meta property="og:type" content="website" />
       </Helmet>
 
