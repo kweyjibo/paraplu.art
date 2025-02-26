@@ -34,9 +34,7 @@ function WallpaperItem({ wallpaper }) {
               </Button>
             </li>
             <li className="wallpaper-actions__item">
-              <Button type="circle" additionalClass="center">
-                <Download file={image} fileName={wallpaperName} />
-              </Button>
+              <Download imageUrl={image} fileName={wallpaperName} />
             </li>
           </ul>
         </div>
