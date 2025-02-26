@@ -1,0 +1,28 @@
+.windmill {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  width: 200px;
+  height: 260px;
+}
+
+.windmill-cnt {
+  position: relative;
+}
+
+.windmill-fl {
+  position: absolute;
+  top: -76px;
+  left: -46px;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
