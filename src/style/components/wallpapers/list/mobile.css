@@ -1,2 +1,5 @@
 @media (width < 1024px) {
+  .wallpaper-title {
+    padding-bottom: 12px;
+  }
 }

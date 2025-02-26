@@ -44,7 +44,7 @@ function WallpaperItem({ wallpaper }) {
         <img height="100%" src={image} alt={wallpaperName} />
       </div>
 
-      <h2 className="wallpaper-i__title">{wallpaperName}</h2>
+      <h1 className="wallpaper-i__title">{wallpaperName}</h1>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 
 import { getWallpapers } from "../../services/apiWallpapers";
 import WallpaperItem from "./WallpaperItem";
@@ -35,14 +34,7 @@ function WallpaperList() {
 
   return (
     <>
-      <Helmet>
-        <title>Paraplu.art - Wallpapers</title>
-        <meta name="description" content="Wallpapers" />
-        <meta
-          name="keywords"
-          content="wallpapers,wallpaper,wallpaper for screen,background,backgrounds,illustration,digital art,digital illustration,"
-        />
-      </Helmet>
+      <h1 className="wallpaper-title">Wallpapers for mobile</h1>
       <div className="wallpapers-list">
         {wallpapers.map((wallpaper) => (
           <WallpaperItem key={wallpaper.id} wallpaper={wallpaper} />
