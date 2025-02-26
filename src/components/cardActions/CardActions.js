@@ -19,7 +19,7 @@ function CardActions({ title, image }) {
         >
           <ul className="download-list">
             <li className="download-list__i">
-              <Download file={image} fileName={title}>
+              <Download imageUrl={image} fileName={title}>
                 <span className="download-text">
                   <span className="download-text__bold">1240x1748</span> (A6,
                   300dpi)
@@ -27,7 +27,7 @@ function CardActions({ title, image }) {
               </Download>
             </li>
             <li className="download-list__i">
-              <Download file={image} fileName={title}>
+              <Download imageUrl={image} fileName={title}>
                 <span className="download-text">
                   <span className="download-text__bold">1748x2480</span> (A5,
                   300dpi)
