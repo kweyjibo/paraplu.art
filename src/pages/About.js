@@ -1,13 +1,8 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 
 import aboutImage from "../img/about.jpg";
-
-export const metadata = {
-  title: "About",
-  description: "Learn more about the project and its creator.",
-};
+import MetaData from "../components/meta-data/MetaData";
 
 function About() {
   const [markdown, setMarkdown] = useState("");
@@ -20,9 +15,11 @@ function About() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title> Paraplu.art. About</title>
-      </Helmet>
+      <MetaData
+        title="About - Paraplu.art"
+        description="Learn more about the project and its creator"
+      />
+
       <section className="inner __footer">
         <ReactMarkdown>{markdown}</ReactMarkdown>
         <div className="about-bg">

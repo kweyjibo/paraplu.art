@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
+import MetaData from "../components/meta-data/MetaData";
 
 export default function Rules() {
   const [markdown, setMarkdown] = useState("");
@@ -13,19 +13,11 @@ export default function Rules() {
   }, []);
 
   const description = "Rules for using the site.";
-  const title = "Paraplu.art. Rules";
+  const title = "Rules - Paraplu.art";
 
   return (
     <>
-      <Helmet>
-        <meta property="og:title" content={title} />
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta
-          name="keywords"
-          content="art,illustration,digital art,digital illustration,vector graphics"
-        />
-      </Helmet>
+      <MetaData title={title} description={description} />
       <section className="inner">
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </section>
