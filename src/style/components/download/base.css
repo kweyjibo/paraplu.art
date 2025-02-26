@@ -17,7 +17,10 @@
 
   font-size: 12px;
   text-decoration: none;
+
+  background-color: transparent;
   color: var(--download-link-locor);
+  border: 0;
 }
 
 .download-icon svg {
@@ -27,6 +30,8 @@
 .download-text {
   padding-top: 4px;
   padding-left: 4px;
+
+  text-decoration: none;
 }
 
 .download-text__bold {
