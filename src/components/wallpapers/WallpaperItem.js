@@ -1,8 +1,4 @@
-import Download from "../download/Download";
-import Button from "../Button";
-
-import Zoom from "../../img/icons/zoom-32.svg";
-import Icon from "../icon/Icon";
+import Actions from "./Actions";
 
 function WallpaperItem({ wallpaper }) {
   const { wallpaperName, image, preview, id } = wallpaper;
@@ -18,26 +14,7 @@ function WallpaperItem({ wallpaper }) {
             title={wallpaperName}
           />
         </figure>
-
-        <div className="wallpaper-actions">
-          <ul className="wallpaper-actions__list">
-            <li className="wallpaper-actions__item">
-              <Button
-                type="circle"
-                additionalClass="center"
-                popovertarget={`myPopover${id}`}
-              >
-                <Icon
-                  res={`${Zoom}#zoom-32`}
-                  additionalClass="wallpaper-zoom"
-                />
-              </Button>
-            </li>
-            <li className="wallpaper-actions__item">
-              <Download imageUrl={image} fileName={wallpaperName} />
-            </li>
-          </ul>
-        </div>
+        <Actions id={id} wallpaperName={wallpaperName} image={image} />
       </div>
 
       <div id={`myPopover${id}`} popover="auto" className="popover">

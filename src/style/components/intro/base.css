@@ -40,3 +40,13 @@
     margin-top: 12px;
   }
 }
+
+.intro-text {
+  p {
+    margin: 0;
+  }
+
+  p:not(:first-child) {
+    margin-top: 16px;
+  }
+}
