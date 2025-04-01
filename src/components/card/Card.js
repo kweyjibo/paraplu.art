@@ -40,9 +40,9 @@ function Card() {
         <figure className="card">
           <img src={image} alt={cardName} className="card-img" />
         </figure>
-        <div>
+        <div className="card-caption">
           <h1 className="card-title">{cardName}</h1>
-          <div>{description}</div>
+          <div className="card-desc">{description}</div>
           <section className="card-actions">
             <CardActions title={cardName} image={image} />
           </section>
