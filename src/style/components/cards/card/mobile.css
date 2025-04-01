@@ -16,6 +16,10 @@
     padding-bottom: 8px;
   }
 
+  .card-desc {
+    line-height: 20px;
+  }
+
   .card-actions {
     padding-top: 8px;
   }
