@@ -7,11 +7,13 @@ function Intro() {
     <section className="intro">
       <div className="intro-grid">
         <div className="intro-grid__cell1">
-          <p className="intro-big-text">Hello!</p>
-          <p>
-            Welcome to <span className="intro-big-text">Paraplu.art</span>.
-          </p>
-          <p>You will meet</p>
+          <div className="intro-text">
+            <p className="intro-big-text">Hi!</p>
+            <p>
+              Welcome to <span className="intro-big-text">Paraplu.art</span>.
+            </p>
+            <p>You will meet</p>
+          </div>
         </div>
         <div className="intro-grid__cell2">
           <figure className="intro-figure">
