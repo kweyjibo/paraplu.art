@@ -5,6 +5,7 @@ import {
   useReducer,
   useCallback,
 } from "react";
+import { toSlug } from "../utils/helpers";
 
 const BASE_URL = "/data";
 
@@ -93,9 +94,21 @@ function CardsProvider({ children }) {
     [cards, currentCard.id]
   );
 
+  const getCardBySlug = useCallback(
+    (slug) => {
+      const card = cards.find((card) => toSlug(card.cardName) === slug);
+      if (card) {
+        dispatch({ type: "card/loaded", payload: card });
+      } else {
+        dispatch({ type: "rejected", payload: "Card not found" });
+      }
+    },
+    [cards]
+  );
+
   return (
     <CardsContext.Provider
-      value={{ cards, isLoading, currentCard, error, getCard }}
+      value={{ cards, isLoading, currentCard, error, getCard, getCardBySlug }}
     >
       {children}
     </CardsContext.Provider>

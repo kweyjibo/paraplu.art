@@ -8,19 +8,12 @@ import { Helmet } from "react-helmet-async";
 import Error from "../error/Error";
 
 function Card() {
-  const { id } = useParams();
-  const { getCard, currentCard, isLoading, error } = useCards();
+  const { slug } = useParams();
+  const { getCardBySlug, currentCard, isLoading, error } = useCards();
 
-  useEffect(
-    function () {
-      getCard(id);
-
-      return function () {
-        getCard(null);
-      };
-    },
-    [id, getCard]
-  );
+  useEffect(() => {
+    getCardBySlug(slug); // Fetch the card by its slug
+  }, [slug, getCardBySlug]);
 
   const { image, cardName, keywords, description } = currentCard;
 
