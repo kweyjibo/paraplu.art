@@ -3,7 +3,10 @@ import Button from "../Button";
 import Icon from "../icon/Icon";
 
 function Download({ imageUrl, children }) {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  const isAndroid = /Android/i.test(ua);
+  const isIOS = /iPhone|iPad|iPod/i.test(ua);
+  const isMobile = isAndroid || isIOS;
 
   const getFileNameFromUrl = (url) => {
     try {
@@ -54,7 +57,7 @@ function Download({ imageUrl, children }) {
           ) : (
             <Button
               type="circle"
-              additionalClass="center"
+              additionalClass="center border"
               onClick={shareImage}
               className="download-lk"
             >
@@ -72,8 +75,9 @@ function Download({ imageUrl, children }) {
               {children}
             </a>
           ) : (
+            // Wallpapers
             <a href={imageUrl} download={finalFileName} className="download-lk">
-              <Button type="circle" additionalClass="center">
+              <Button type="circle" additionalClass="center border">
                 <Icon res={`${socialsIcons}#download`} />
               </Button>
             </a>
