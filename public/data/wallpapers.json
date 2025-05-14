@@ -1,5 +1,41 @@
 [
   {
+    "wallpaperName": "I'm fine",
+    "id": "07",
+    "preview": "/wallpapers/im-fine/preview.jpg",
+    "image": "/wallpapers/im-fine/Im-fine.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "I'm fine, just a little bit tired. But I can do it."
+  },
+  {
+    "wallpaperName": "Do yoga",
+    "id": "06",
+    "preview": "/wallpapers/do-yoga/preview.jpg",
+    "image": "/wallpapers/do-yoga/do-yoga.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Do yoga every day to keep your body and mind healthy."
+  },
+  {
+    "wallpaperName": "Spring",
+    "id": "05",
+    "preview": "/wallpapers/Spring/preview.jpg",
+    "image": "/wallpapers/Spring/wallpaper-spring.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Make your friends happy with this birthday card."
+  },
+  {
+    "wallpaperName": "Green",
+    "id": "04",
+    "preview": "/wallpapers/green/green-wallpaper-preview.jpg",
+    "image": "/wallpapers/green/green-wallpaper.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Make your friends happy with this birthday card."
+  },
+  {
     "wallpaperName": "Do not disturb",
     "id": "03",
     "preview": "/wallpapers/do-not-disturb/preview.jpg",

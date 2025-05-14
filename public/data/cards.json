@@ -1,5 +1,125 @@
 [
   {
+    "cardName": "Tulips",
+    "notes": "Tulips",
+    "id": "17",
+    "preview": "/cards/tulips/preview.jpg",
+    "image": "/cards/tulips/tulips.jpg",
+    "image1240": "/cards/tulips/tulips-1240.jpg",
+    "image1748": "/cards/tulips/tulips-1748.jpg",
+    "size": "280",
+    "keywords": "card,digitalart,illustration,artwork",
+    "description": "Beautiful tulips in a vase. This card is perfect for any occasion, whether it's a birthday, anniversary, or just to say 'I love you'."
+  },
+  {
+    "cardName": "Happy Birthday vol2",
+    "notes": "Happy Birthday",
+    "id": "16",
+    "preview": "/cards/happy-birthday-tosts/preview.jpg",
+    "image": "/cards/happy-birthday-tosts/happy-birthday-vol2.jpg",
+    "image1240": "/cards/happy-birthday-tosts/happy-birthday-1240.jpg",
+    "image1748": "/cards/happy-birthday-tosts/happy-birthday-1748.jpg",
+    "size": "280",
+    "keywords": "card,digitalart,illustration,artwork",
+    "description": "The fanny card with happy toasts. It is perfect for celebrating a birthday in a fun and lighthearted way. "
+  },
+  {
+    "cardName": "Goals",
+    "notes": "Goals",
+    "id": "15",
+    "preview": "/cards/goals/preview.jpg",
+    "image": "/cards/goals/goals.jpg",
+    "image1240": "/cards/goals/goals-1240.jpg",
+    "image1748": "/cards/goals/goals-1748.jpg",
+    "size": "280",
+    "keywords": "card,digitalart,illustration,artwork",
+    "description": "Stay focused on your goals and keep pushing forward. This card is a reminder to stay motivated and work towards your dreams. Rid of fear and self-doubt. You are capable of achieving great things, so keep striving for success!"
+  },
+  {
+    "cardName": "Loving support",
+    "notes": "Loving support",
+    "id": "14",
+    "preview": "/cards/love-is-support/preview.jpg",
+    "image": "/cards/love-is-support/love-is-support.jpg",
+    "image1240": "/cards/love-is-support/love-is-support-1240.jpg",
+    "image1748": "/cards/love-is-support/love-is-support-1748.jpg",
+    "size": "280",
+    "keywords": "card,digitalart,illustration,artwork",
+    "description": "This card is a beautiful way to express your love and support for someone special in your life."
+  },
+  {
+    "cardName": "Are you ok?",
+    "notes": "Are you ok",
+    "id": "13",
+    "preview": "/cards/okay/preview.jpg",
+    "image": "/cards/okay/okay.jpg",
+    "image1240": "/cards/okay/okay-1240.jpg",
+    "image1748": "/cards/okay/okay-1748.jpg",
+    "size": "280",
+    "keywords": "card,digitalart,illustration,artwork",
+    "description": "It is time to ask your friend if they are ok. This card is a great way to show you care and are thinking of them. Whether it's a simple check-in or a heartfelt message, this card is perfect for reaching out and letting someone know you're there for them."
+  },
+  {
+    "cardName": "Happy Friday",
+    "notes": "Happy Friday",
+    "id": "12",
+    "preview": "/cards/happy-friday/preview.jpg",
+    "image": "/cards/happy-friday/happy-friday.jpg",
+    "image1240": "/cards/happy-friday/happy-friday-1240.jpg",
+    "image1748": "/cards/happy-friday/happy-friday-1748.jpg",
+    "size": "280",
+    "keywords": "happy friday,card,digitalart,illustration,artwork",
+    "description": "Happy Friday! It's the end of the week and the start of the weekend. Time to relax and enjoy some well-deserved time off. Whether you're planning a fun outing or just taking it easy at home, make the most of your Friday!"
+  },
+  {
+    "cardName": "Flower viewing",
+    "notes": "Flower viewing",
+    "id": "11",
+    "preview": "/cards/sakura/preview.jpg",
+    "image": "/cards/sakura/sakura.jpg",
+    "image1240": "/cards/sakura/sakura-1240.jpg",
+    "image1748": "/cards/sakura/sakura-1748.jpg",
+    "size": "280",
+    "keywords": "sakura,hanami,card,digitalart,illustration,artwork",
+    "description": "Hanami (花見) is a traditional Japanese custom that translates to 'flower viewing.' It refers to the practice of enjoying the beauty of cherry blossoms (sakura) during their brief bloom in spring. "
+  },
+  {
+    "cardName": "Be fine",
+    "notes": "Be fine",
+    "id": "10",
+    "preview": "/cards/be-fine/preview.jpg",
+    "image": "/cards/be-fine/be-fine.jpg",
+    "image1240": "/cards/be-fine/be-fine-1240.jpg",
+    "image1748": "/cards/be-fine/be-fine-1748.jpg",
+    "size": "280",
+    "keywords": "fine,be fine,card,digitalart,illustration,artwork",
+    "description": "Absolutely! Hugs can be magical—comforting, reassuring, and sometimes exactly what someone needs. Sending you a big virtual hug."
+  },
+  {
+    "cardName": "Do yoga",
+    "notes": "Do yoga every day",
+    "id": "09",
+    "preview": "/cards/do-yoga/preview.jpg",
+    "image": "/cards/do-yoga/do-yoga.jpg",
+    "image1240": "/cards/do-yoga/1240.jpg",
+    "image1748": "/cards/do-yoga/1748.jpg",
+    "size": "280",
+    "keywords": "do yoga,yoga,card,digitalart,illustration,artwork",
+    "description": "Show how you like to do yoga."
+  },
+  {
+    "cardName": "Love is...",
+    "notes": "Say I love you",
+    "id": "08",
+    "preview": "/cards/love-is/preview.jpg",
+    "image": "/cards/love-is/love-is.jpg",
+    "image1240": "/cards/love-is/1240x1748.jpg",
+    "image1748": "/cards/love-is/1748x2480.jpg",
+    "size": "280",
+    "keywords": "love,love is,card,digitalart,illustration,artwork",
+    "description": "Make your friend happy with this card."
+  },
+  {
     "cardName": "Happy Birthday",
     "notes": "Say Happy Birthday to your friends",
     "id": "07",
@@ -8,7 +128,7 @@
     "image1240": "/cards/happy-birthday/happy-birthday(1240x1748).jpg",
     "image1748": "/cards/happy-birthday/happy-birthday(1748x2480).jpg",
     "size": "280",
-    "keywords": "happy birthday, greeting, card",
+    "keywords": "happy birthday,greeting,digitalart,illustration,artwork",
     "description": "Make your friends happy with this birthday card."
   },
   {
@@ -20,7 +140,7 @@
     "image1240": "/cards/HNY/happy-new-year-1240.jpg",
     "image1748": "/cards/HNY/happy-new-year-1748.jpg",
     "size": "280",
-    "keywords": "winter, snow, greeting, card, happy new year",
+    "keywords": "winter,snow,greeting,card,happy new year,digitalart,illustration,artwork",
     "description": "This is a greeting card to say Happy New Year. 2025 is the year of the snake."
   },
   {
@@ -32,7 +152,7 @@
     "image1240": "/cards/winter/happy-winter(1240x1748).jpg",
     "image1748": "/cards/winter/happy-winter(1748x2480).jpg",
     "size": "280",
-    "keywords": "winter, snow, greeting, card",
+    "keywords": "winter,snow,greeting,card,digitalart,illustration,artwork",
     "description": "This is a funny card."
   },
   {
@@ -44,7 +164,7 @@
     "image1240": "/cards/happy-winter/happy-winter(1240x1748).jpg",
     "image1748": "/cards/happy-winter/happy-winter(1748x2480).jpg",
     "size": "280",
-    "keywords": "winter, snow, greeting, card",
+    "keywords": "winter,snow,greeting,card,digitalart,illustration,artwork",
     "description": "This is a greeting card to say 'Happy Winter'."
   },
   {
@@ -56,7 +176,7 @@
     "image1240": "/cards/november-calendar/november-calendar-1240.jpg",
     "image1748": "/cards/november-calendar/november-calendar-1748.jpg",
     "size": "280",
-    "keywords": "autumn, leaves, fall, november, greeting, card",
+    "keywords": "autumn,leaves,fall,november,greeting,card,digitalart,illustration,artwork",
     "description": "This is a greeting card for November."
   },
   {
@@ -68,7 +188,7 @@
     "image1240": "/cards/october-calendar/oktober-calendar-1240.jpg",
     "image1748": "/cards/october-calendar/oktober-calendar-1748.jpg",
     "size": "280",
-    "keywords": "autumn, leaves, fall, oktober, greeting, card",
+    "keywords": "autumn,leaves,fall,oktober,greeting,card,digitalart,illustration,artwork",
     "description": "This is a greeting card for Oktober. It features a pumkin with a cat."
   },
   {
@@ -80,7 +200,7 @@
     "image1240": "/cards/happy-autumn/happy-autumn(1240x1748).jpg",
     "image1748": "/cards/happy-autumn/happy-autumn(1748x2480).jpg",
     "size": "280",
-    "keywords": "autumn, leaves, fall, happy, greeting, card",
+    "keywords": "autumn,leaves,fall,happy,greeting,card,digitalart,illustration,artwork",
     "description": "This is a greeting card for the autumn season. It features a tree with leaves in autumn colors. The text on the card reads 'Happy Autumn'."
   }
 ]
