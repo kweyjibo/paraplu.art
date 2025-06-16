@@ -10,20 +10,20 @@ import { initialState, reducer } from "./baseReducer";
 
 const BASE_URL = "/data";
 
-const CardsContext = createContext();
+const WallpapersContext = createContext();
 
-function CardsProvider({ children }) {
+function WallpapersProvider({ children }) {
   const [{ items, isLoading, currentItem, error }, dispatch] = useReducer(
     reducer,
     initialState
   );
 
   useEffect(function () {
-    const fetchCards = async () => {
+    const fetchWallpapers = async () => {
       dispatch({ type: "FETCH_START" });
 
       try {
-        const res = await fetch(`${BASE_URL}/cards.json`);
+        const res = await fetch(`${BASE_URL}/wallpapers.json`);
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
@@ -38,36 +38,44 @@ function CardsProvider({ children }) {
       }
     };
 
-    fetchCards();
+    fetchWallpapers();
   }, []);
 
-  const getCardBySlug = useCallback(
+  const getWallpaperBySlug = useCallback(
     (slug) => {
-      const card = items.find((card) => toSlug(card.cardName) === slug);
-      if (card) {
-        dispatch({ type: "FETCH_SUCCESS_CURRENT", payload: card });
+      const wallpaper = items.find(
+        (wallpaper) => toSlug(wallpaper.wallpaperName) === slug
+      );
+      if (wallpaper) {
+        dispatch({ type: "FETCH_SUCCESS_CURRENT", payload: wallpaper });
       } else {
-        dispatch({ type: "FETCH_ERROR", payload: "Card not found" });
+        dispatch({ type: "FETCH_ERROR", payload: "Wallpaper not found" });
       }
     },
     [items]
   );
 
   return (
-    <CardsContext.Provider
-      value={{ items, isLoading, currentItem, error, getCardBySlug }}
+    <WallpapersContext.Provider
+      value={{
+        items,
+        isLoading,
+        currentItem,
+        error,
+        getWallpaperBySlug,
+      }}
     >
       {children}
-    </CardsContext.Provider>
+    </WallpapersContext.Provider>
   );
 }
 
-function useCards() {
-  const context = useContext(CardsContext);
+function useWallpapers() {
+  const context = useContext(WallpapersContext);
   if (context === undefined) {
-    throw new Error("useCards must be used within a CardsProvider");
+    throw new Error("useWallpapers must be used within a WallpapersProvider");
   }
   return context;
 }
 
-export { CardsProvider, useCards };
+export { WallpapersProvider, useWallpapers };

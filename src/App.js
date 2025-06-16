@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { CardsProvider } from "./contexts/CardsContext";
 import { HelmetProvider } from "react-helmet-async";
 
 import AppLayout from "./ui/AppLayout";
@@ -10,10 +9,12 @@ import PageNotFound from "./pages/PageNotFound";
 import Card from "./components/card/Card";
 import CardList from "./components/card/CardList";
 import WallpaperList from "./components/wallpapers/WallpaperList";
+import CardWallpaper from "./components/wallpapers/CardWallpaper";
+import AppProviders from "./contexts/AppProviders";
 
 function App() {
   return (
-    <CardsProvider>
+    <AppProviders>
       <HelmetProvider>
         <BrowserRouter>
           <Routes>
@@ -23,6 +24,7 @@ function App() {
               <Route path="cards" element={<CardList />} />
               <Route path="/cards/:slug" element={<Card />} />
               <Route path="wallpapers" element={<WallpaperList />} />
+              <Route path="wallpapers/:slug" element={<CardWallpaper />} />
               <Route path="about" element={<About />} />
               <Route path="rules" element={<Rules />} />
               <Route path="*" element={<PageNotFound />} />
@@ -30,7 +32,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </HelmetProvider>
-    </CardsProvider>
+    </AppProviders>
   );
 }
 
