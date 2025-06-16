@@ -1,0 +1,13 @@
+@media (width >= 1024px) {
+  .cardWallpaper {
+    width: 624px;
+  }
+
+  .cardWallpaper-cnt {
+    gap: 32px;
+  }
+
+  .cardWallpaper__title {
+    padding-bottom: 24px;
+  }
+}

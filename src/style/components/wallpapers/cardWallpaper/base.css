@@ -1,0 +1,15 @@
+.cardWallpaper {
+  margin: 0;
+}
+
+.cardWallpaper-cnt {
+  display: flex;
+}
+
+.cardWallpaper-img {
+  width: 100%;
+}
+
+.cardWallpaper__title {
+  margin: 0;
+}

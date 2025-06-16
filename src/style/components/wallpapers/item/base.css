@@ -1,9 +1,6 @@
 .wallpaper-i__cnt {
   padding: 0;
   margin: 0;
-
-  overflow: hidden;
-  border-radius: var(--border-radius-size);
 }
 
 .wallpaper-i__img {
@@ -12,22 +9,20 @@
 
 .wallpaper-preview__cnt {
   position: relative;
-}
-
-.wallpaper-actions {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 1;
-}
-
-.wallpaper-actions__item:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.popover {
+  display: block;
   overflow: hidden;
-  height: 100%;
+  border-radius: var(--border-radius-size);
+}
 
-  border: 0;
+.wallpaper-i__title {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.2);
 }
