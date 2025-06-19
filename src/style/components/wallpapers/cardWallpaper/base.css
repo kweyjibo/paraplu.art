@@ -1,5 +1,8 @@
 .cardWallpaper {
   margin: 0;
+
+  overflow: hidden; /* border-radius */
+  border-radius: var(--border-radius-size);
 }
 
 .cardWallpaper-cnt {
@@ -7,6 +10,7 @@
 }
 
 .cardWallpaper-img {
+  display: block;
   width: 100%;
 }
 

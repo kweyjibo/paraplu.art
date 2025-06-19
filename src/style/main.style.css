@@ -11,8 +11,8 @@
 
 /* Sizes */
 
-@import "sizes/mobile.css";
-@import "sizes/desktop.css";
+@import "global/sizes/mobile.css";
+@import "global/sizes/desktop.css";
 
 @import "base.css";
 
@@ -34,6 +34,7 @@
 @import "components/action-list/index.css";
 @import "components/download/index.css";
 @import "components/icon/index.css";
+@import "components/error/index.css";
 
 @import "pages/home/index.css";
 @import "pages/main/index.css";

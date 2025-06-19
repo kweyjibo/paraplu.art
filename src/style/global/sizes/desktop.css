@@ -10,6 +10,9 @@
 
     /* Font sizes */
 
+    --title-h1-font-size: 32px;
+    --title-h2-font-size: 26px;
+
     --site-font-size: 16px;
 
     --quote-font-size: 20px;

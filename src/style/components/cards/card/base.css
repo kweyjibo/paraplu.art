@@ -9,6 +9,8 @@
   border-radius: var(--border-radius-size);
   overflow: hidden;
 
+  border: 1px solid var(--card-border-color);
+
   & img {
     display: block;
   }

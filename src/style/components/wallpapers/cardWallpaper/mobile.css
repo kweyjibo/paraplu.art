@@ -1,2 +1,6 @@
 @media (width < 1024px) {
+  .cardWallpaper-cnt {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
 }
