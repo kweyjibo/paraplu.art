@@ -14,8 +14,6 @@ function CardWallpaper() {
     getWallpaperBySlug(slug); // Fetch the card by its slug
   }, [slug, getWallpaperBySlug]);
 
-  console.log("test   !!" + currentItem);
-
   const { id, image, wallpaperName } = currentItem;
 
   if (isLoading) return <Spinner />;

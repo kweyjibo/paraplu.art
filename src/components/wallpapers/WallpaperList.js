@@ -1,6 +1,7 @@
 import WallpaperItem from "./WallpaperItem";
 import Spinner from "../Spinner";
 import { useWallpapers } from "../../contexts/WallpapersContex";
+import Error from "../error/Error";
 
 function WallpaperList() {
   const { items, isLoading, error } = useWallpapers();
@@ -10,7 +11,7 @@ function WallpaperList() {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <Error message={error} />;
   }
 
   return (
