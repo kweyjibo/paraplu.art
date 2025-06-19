@@ -1,0 +1,13 @@
+@media (width >= 1024px) {
+  .error-title {
+    font-size: var(--title-h1-font-size);
+  }
+
+  .error-subtitle {
+    font-size: var(--title-h2-font-size);
+  }
+
+  .error-ifigure {
+    width: 400px;
+  }
+}
