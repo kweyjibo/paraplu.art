@@ -6,21 +6,28 @@ import {
   useCallback,
 } from "react";
 import { toSlug } from "../utils/helpers";
-import { initialState, reducer } from "./baseReducer";
+import { initialState, createReducer } from "./baseReducer";
 
 const BASE_URL = "/data";
 
 const WallpapersContext = createContext();
 
+const wallpaperReducer = createReducer({
+  start: "WALLPAPERS_FETCH_START",
+  success: "WALLPAPERS_FETCH_SUCCESS",
+  successCurrent: "WALLPAPERS_FETCH_SUCCESS_CURRENT",
+  error: "WALLPAPERS_FETCH_ERROR",
+});
+
 function WallpapersProvider({ children }) {
   const [{ items, isLoading, currentItem, error }, dispatch] = useReducer(
-    reducer,
+    wallpaperReducer,
     initialState
   );
 
   useEffect(function () {
     const fetchWallpapers = async () => {
-      dispatch({ type: "FETCH_START" });
+      dispatch({ type: wallpaperReducer.start });
 
       try {
         const res = await fetch(`${BASE_URL}/wallpapers.json`);
@@ -29,10 +36,10 @@ function WallpapersProvider({ children }) {
         }
         const data = await res.json();
 
-        dispatch({ type: "FETCH_SUCCESS", payload: data });
+        dispatch({ type: "WALLPAPERS_FETCH_SUCCESS", payload: data });
       } catch (err) {
         dispatch({
-          type: "FETCH_ERROR",
+          type: "WALLPAPERS_FETCH_ERROR",
           payload: "There was an error loading data...",
         });
       }
@@ -47,9 +54,15 @@ function WallpapersProvider({ children }) {
         (wallpaper) => toSlug(wallpaper.wallpaperName) === slug
       );
       if (wallpaper) {
-        dispatch({ type: "FETCH_SUCCESS_CURRENT", payload: wallpaper });
+        dispatch({
+          type: "WALLPAPERS_FETCH_SUCCESS_CURRENT",
+          payload: wallpaper,
+        });
       } else {
-        dispatch({ type: "FETCH_ERROR", payload: "Wallpaper not found" });
+        dispatch({
+          type: "WALLPAPERS_FETCH_ERROR",
+          payload: "Wallpapers not found",
+        });
       }
     },
     [items]

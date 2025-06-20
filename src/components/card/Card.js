@@ -9,17 +9,17 @@ import Error from "../error/Error";
 
 function Card() {
   const { slug } = useParams();
-  const { getCardBySlug, currentCard, isLoading, error } = useCards();
+  const { getCardBySlug, currentItem, isLoading, error } = useCards();
 
   useEffect(() => {
     getCardBySlug(slug); // Fetch the card by its slug
   }, [slug, getCardBySlug]);
 
-  const { image, cardName, keywords, description } = currentCard;
+  const { image, cardName, keywords, description } = currentItem;
 
   if (isLoading) return <Spinner />;
 
-  if (Object.keys(currentCard).length === 0) return <Error message={error} />;
+  if (error) return <Error message={error} />;
 
   return (
     <>

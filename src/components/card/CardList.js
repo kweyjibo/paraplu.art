@@ -3,17 +3,17 @@ import Spinner from "../Spinner";
 import { useCards } from "../../contexts/CardsContext";
 
 function CardList({ limit }) {
-  const { cards, isLoading, error } = useCards();
+  const { items, isLoading, error } = useCards();
 
   if (isLoading) {
     return <Spinner />;
   }
 
-  const displayedCards = limit ? cards.slice(0, limit) : cards;
+  const displayedCards = limit ? items.slice(0, limit) : items;
 
   return (
     <>
-      {!cards.length ? (
+      {!items.length ? (
         <p>{error}</p>
       ) : (
         <div className="list">

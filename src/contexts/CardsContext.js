@@ -6,21 +6,28 @@ import {
   useCallback,
 } from "react";
 import { toSlug } from "../utils/helpers";
-import { initialState, reducer } from "./baseReducer";
+import { initialState, createReducer } from "./baseReducer";
 
 const BASE_URL = "/data";
 
 const CardsContext = createContext();
 
+const cardsReducer = createReducer({
+  start: "CARDS_FETCH_START",
+  success: "CARDS_FETCH_SUCCESS",
+  successCurrent: "CARDS_FETCH_SUCCESS_CURRENT",
+  error: "CARDS_FETCH_ERROR",
+});
+
 function CardsProvider({ children }) {
   const [{ items, isLoading, currentItem, error }, dispatch] = useReducer(
-    reducer,
+    cardsReducer,
     initialState
   );
 
   useEffect(function () {
     const fetchCards = async () => {
-      dispatch({ type: "FETCH_START" });
+      dispatch({ type: "CARDS_FETCH_START" });
 
       try {
         const res = await fetch(`${BASE_URL}/cards.json`);
@@ -29,10 +36,10 @@ function CardsProvider({ children }) {
         }
         const data = await res.json();
 
-        dispatch({ type: "FETCH_SUCCESS", payload: data });
+        dispatch({ type: "CARDS_FETCH_SUCCESS", payload: data });
       } catch (err) {
         dispatch({
-          type: "FETCH_ERROR",
+          type: "CARDS_FETCH_ERROR",
           payload: "There was an error loading data...",
         });
       }
@@ -45,9 +52,9 @@ function CardsProvider({ children }) {
     (slug) => {
       const card = items.find((card) => toSlug(card.cardName) === slug);
       if (card) {
-        dispatch({ type: "FETCH_SUCCESS_CURRENT", payload: card });
+        dispatch({ type: "CARDS_FETCH_SUCCESS_CURRENT", payload: card });
       } else {
-        dispatch({ type: "FETCH_ERROR", payload: "Card not found" });
+        dispatch({ type: "CARDS_FETCH_ERROR", payload: "Card not found" });
       }
     },
     [items]
