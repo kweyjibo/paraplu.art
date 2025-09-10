@@ -1,5 +1,68 @@
 [
   {
+    "wallpaperName": "Don't touch",
+    "id": "14",
+    "preview": "/wallpapers/do-not-touch/preview.jpg",
+    "image": "/wallpapers/do-not-touch/do-not-touch.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Funny wallpaper with Gleb that says 'Don't touch my phone'."
+  },
+  {
+    "wallpaperName": "Cozy desk",
+    "id": "13",
+    "preview": "/wallpapers/cozy-desk/preview.jpg",
+    "image": "/wallpapers/cozy-desk/cozy-desk.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Cozy desk is a perfect place to work and relax at the same time."
+  },
+  {
+    "wallpaperName": "Burn out",
+    "id": "12",
+    "preview": "/wallpapers/burn-out/preview.jpg",
+    "image": "/wallpapers/burn-out/tost-burn.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "When you feel like you are burning out, take a break and relax."
+  },
+  {
+    "wallpaperName": "Time to relax",
+    "id": "11",
+    "preview": "/wallpapers/time-to-relax/preview.jpg",
+    "image": "/wallpapers/time-to-relax/time-to-relax.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Summer pond is a beautiful place to relax and enjoy nature"
+  },
+  {
+    "wallpaperName": "Summer pond",
+    "id": "10",
+    "preview": "/wallpapers/summer-pond/preview.jpg",
+    "image": "/wallpapers/summer-pond/summer-pond.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Summer pond is a beautiful place to relax and enjoy nature"
+  },
+  {
+    "wallpaperName": "Summer dreams",
+    "id": "09",
+    "preview": "/wallpapers/summer-dreams/preview.jpg",
+    "image": "/wallpapers/summer-dreams/summer-dreams.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Summer time is a good time to relax and be happy"
+  },
+  {
+    "wallpaperName": "Summer time",
+    "id": "08",
+    "preview": "/wallpapers/summer-time/preview.jpg",
+    "image": "/wallpapers/summer-time/summer-time.jpg",
+    "size": "250",
+    "keywords": "wallpapers,wallpaper,wallpaper for screen,background,backgrounds",
+    "description": "Summer time is a good time to relax and be happy"
+  },
+  {
     "wallpaperName": "I'm fine",
     "id": "07",
     "preview": "/wallpapers/im-fine/preview.jpg",
