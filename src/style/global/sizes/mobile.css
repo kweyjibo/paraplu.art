@@ -4,6 +4,10 @@
 
     --sidebar-width: 100px;
 
+    /* Height */
+
+    --side-bar-height: 46px;
+
     /* Border */
 
     --border-radius-size: 8px;

@@ -1,4 +1,6 @@
 :root {
+  --site-width-min: 360px;
+
   /* Heights */
   --header-height: 50px;
 }
