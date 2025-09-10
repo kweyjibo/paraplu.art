@@ -1,7 +1,17 @@
 @media (width >= 1024px) {
   .footer {
-    --footer-shift: 32px;
-    grid-column-gap: 12px;
+    padding: 0 12px 12px;
+  }
+
+  .footer-cnt {
+    padding: 16px;
+
+    border-radius: var(--border-radius-size);
+    background-color: var(--site-bg-white);
+  }
+
+  .footer__title {
+    padding: 0 0 12px;
   }
 
   .footer__section {
@@ -10,7 +20,7 @@
     }
   }
 
-  .footer__list {
-    gap: 12px;
+  .footer__section:not(:first-child) {
+    margin-top: 28px;
   }
 }
