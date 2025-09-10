@@ -18,7 +18,7 @@ function CardWallpaper() {
 
   if (isLoading) return <Spinner />;
 
-  if (Object.keys(currentItem).length === 0) return <Error message={error} />;
+  if (error) return <Error message={error} />;
 
   return (
     <div className="cardWallpaper-cnt">
