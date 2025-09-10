@@ -1,6 +1,36 @@
 @media (width < 1024px) {
   .grid {
+    grid-template-rows: 80px var(--side-bar-height) 1fr;
     grid-column-gap: 4px;
-    grid-row-gap: 24px;
+    grid-row-gap: 4px;
+  }
+
+  .cell1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 1;
+  }
+  .cell2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 1;
+  }
+  .cell3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    grid-row-end: 4;
+    grid-column-end: 1;
+  }
+  .cell4 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+
+    grid-row-end: 5;
+    grid-column-end: 1;
   }
 }

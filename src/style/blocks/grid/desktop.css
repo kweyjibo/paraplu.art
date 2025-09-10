@@ -1,6 +1,38 @@
 @media (width >= 1024px) {
   .grid {
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-columns: var(--sidebar-width) 1fr;
+
     grid-column-gap: 12px;
     grid-row-gap: 36px;
+  }
+
+  .cell1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+  .cell2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+  .cell3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    grid-row-end: 4;
+    grid-column-end: 3;
+  }
+  .cell4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
   }
 }

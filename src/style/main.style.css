@@ -11,8 +11,7 @@
 
 /* Sizes */
 
-@import "global/sizes/mobile.css";
-@import "global/sizes/desktop.css";
+@import "global/sizes/index.css";
 
 @import "base.css";
 
