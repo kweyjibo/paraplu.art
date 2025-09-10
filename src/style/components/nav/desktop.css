@@ -8,8 +8,18 @@
     --nav-element-height: 56px;
   }
 
+  .nav-i:not(:last-child) {
+    list-style: none;
+    border-bottom: 1px solid var(--nav-sp-bg);
+  }
+
   .nav-lk {
+    display: inline-flex;
+    align-items: center;
     padding: 16px 12px;
+
+    width: 100%;
+    height: var(--nav-element-height);
 
     font-size: 24px;
   }

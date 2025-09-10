@@ -8,18 +8,7 @@
   background-color: var(--nav-bg);
 }
 
-.nav-i:not(:last-child) {
-  list-style: none;
-  border-bottom: 1px solid var(--nav-sp-bg);
-}
-
 .nav-lk {
-  display: inline-flex;
-  align-items: center;
-
-  width: 100%;
-  height: var(--nav-element-height);
-
   line-height: 1;
   color: var(--nav-color);
   text-decoration: none;

@@ -21,7 +21,7 @@ export default function Nav() {
             icon={`${navIcons}#wallpapers`}
             additionalClass="small"
           >
-            Wallpapers
+            Walls
           </NavItem>
         </li>
         <li className="nav-i">

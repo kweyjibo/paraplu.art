@@ -3,6 +3,11 @@
     padding: 0 4px;
   }
 
+  .sidebar-menu {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .sidebar-bottom {
     display: none;
   }
