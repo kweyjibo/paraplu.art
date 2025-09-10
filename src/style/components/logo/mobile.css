@@ -2,6 +2,11 @@
   .logo {
     &.__mobile {
       display: block;
+      height: var(--side-bar-height);
     }
+  }
+
+  .logo-lk {
+    display: block;
   }
 }

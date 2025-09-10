@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { ReactComponent as Logopicture } from "./../img/paraplu-logo.svg";
-import { ReactComponent as Logopicturemobile } from "./../img/m/paraplu-logo.svg";
+import { ReactComponent as Logopicturemobile } from "./../img/m/paraplu-logo-v2.svg";
 
 function Logo() {
   return (
@@ -12,7 +12,7 @@ function Logo() {
         </Link>
       </div>
       <div className="logo __mobile">
-        <Link to="/">
+        <Link to="/" className="logo-lk">
           <Logopicturemobile alt="Logo" width={84} />
         </Link>
       </div>
