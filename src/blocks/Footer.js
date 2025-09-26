@@ -2,7 +2,7 @@ import { EMAIL, BLOG, TELEGRAM, IG, COPYRIGHT, ABOUT } from "./footerContacts";
 
 export default function Footer() {
   return (
-    <footer className="footer cell4">
+    <footer className="footer">
       <div className="footer-cnt">
         <div className="footer__section __1">
           <h3 className="footer__title">Links</h3>

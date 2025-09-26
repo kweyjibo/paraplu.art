@@ -15,9 +15,9 @@ function AppLayout() {
         <section className="content">
           <Outlet />
         </section>
-      </main>
 
-      <Footer />
+        <Footer />
+      </main>
     </div>
   );
 }

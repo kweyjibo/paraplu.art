@@ -17,6 +17,7 @@
 
 @import "blocks/grid/index.css";
 @import "blocks/content/index.css";
+@import "blocks/main/index.css";
 @import "blocks/header/index.css";
 @import "blocks/sidebar/index.css";
 @import "blocks/footer/index.css";

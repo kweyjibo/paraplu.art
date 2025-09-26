@@ -2,4 +2,9 @@
   .sidebar {
     padding: 0 12px;
   }
+
+  .sidebar-bottom {
+    position: relative;
+    bottom: 30px;
+  }
 }
