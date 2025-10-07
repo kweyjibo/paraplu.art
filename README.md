@@ -1,3 +1,3 @@
 # Paraplu.art
 
-My art project about dreams. I am not a creator. I'm a dreamer ;)
+My art project about dreams. I am a creator of dreams. ;)

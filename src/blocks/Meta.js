@@ -9,7 +9,7 @@ function Meta() {
       <title>Paraplu.art</title>
       <meta
         name="description"
-        content="Paraplu.art - dreams about something good. Digital illustration and simple art about life, nature, and people."
+        content="Paraplu art. Digital illustrations and simple art inspired by life, nature, and people — dreams about something good."
       />
       <meta
         name="keywords"
@@ -21,7 +21,7 @@ function Meta() {
       <meta property="og:title" content="Paraplu.art" />
       <meta
         property="og:description"
-        content="Paraplu.art - dreams about something good. Digital illustration and simple art about life, nature, and people."
+        content="Paraplu art. Digital illustrations and simple art inspired by life, nature, and people — dreams about something good."
       />
       <meta property="og:url" content="https://paraplu.art" />
       <meta property="og:image" content="img/logo.png"></meta>
