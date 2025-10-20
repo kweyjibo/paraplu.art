@@ -1,0 +1,17 @@
+@media (width < 1024px) {
+  .tweet-title {
+    margin-bottom: 4px;
+  }
+
+  .tweet-text {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .tweet-image__src {
+    width: 100%;
+  }
+}
