@@ -1,7 +1,8 @@
-.content {
-  position: relative;
-  flex: 1;
-
+.island {
   background-color: #fff;
   border-radius: var(--border-radius-size);
+
+  &.__flex-1 {
+    flex: 1;
+  }
 }
